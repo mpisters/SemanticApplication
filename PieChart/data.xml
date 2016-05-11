@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+<head>
+    <variable name="Surinamers"/>
+    <variable name="Antillians"/>
+    <variable name="Turkish"/>
+    <variable name="Maroccans"/>
+    <variable name="Others"/>
+    <variable name="Western"/>
+    <variable name="Natives"/>
+</head>
+<results>
+    <result>
+        <binding name="Surinamers">
+            <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">66190</literal>
+        </binding>
+        <binding name="Antillians">
+            <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">12255</literal>
+        </binding>
+        <binding name="Turkish">
+            <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">42638</literal>
+        </binding>
+        <binding name="Maroccans">
+            <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">75085</literal>
+        </binding>
+        <binding name="Others">
+            <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">94638</literal>
+        </binding>
+        <binding name="Western">
+            <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">140431</literal>
+        </binding>
+        <binding name="Natives">
+            <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">403476</literal>
+        </binding>
+    </result>
+</results>
+</sparql>

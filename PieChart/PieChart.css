@@ -4,14 +4,14 @@
 }
 
 .textTop {
-    font-family: 'Arial';
+    font-family: 'Arial', monospace;
     font-size: 12pt;
     fill: #bbb;
 }
 
 .textBottom {
     fill: #444;
-    font-family: 'Arial';
+    font-family: 'Arial',monospace;
     font-weight: bold;
     font-size: 18pt;
 }
@@ -19,7 +19,7 @@
 .top {
     border: 1px solid #bbb;
     color: #777;
-    font-family: 'Arial';
+    font-family: 'Arial', monospace;
     padding: 5px;
     text-decoration: none;
 }
@@ -29,6 +29,6 @@
     color: #333;
 }
 .legend{
-    font-family: 'Arial';
+    font-family: 'Arial', monospace;
     font-size: 12px;
 }

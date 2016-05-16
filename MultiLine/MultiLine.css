@@ -3,7 +3,20 @@
     stroke: #777;
 }
 .axis text {
-    font-family: Lato;
+    font-family: Lato, monospace;
     font-size: 13px;
     color:red;
+}
+
+#title {
+    font-family: Arial, monospace;
+    color: #777777;
+    font-size:18px;
+}
+
+
+#label {
+    font-family: Arial, monospace;
+    color: #777777;
+    font-size:10px;
 }

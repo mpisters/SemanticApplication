@@ -1,134 +1,174 @@
-var data = [{
-    "Client": "ABC",
-    "sale": "202",
-    "year": "2000"
-}, {
-    "Client": "ABC",
-    "sale": "215",
-    "year": "2002"
-}, {
-    "Client": "ABC",
-    "sale": "179",
-    "year": "2004"
-}, {
-    "Client": "ABC",
-    "sale": "199",
-    "year": "2006"
-}, {
-    "Client": "ABC",
-    "sale": "134",
-    "year": "2008"
-}, {
-    "Client": "ABC",
-    "sale": "176",
-    "year": "2010"
-}, {
-    "Client": "XYZ",
-    "sale": "100",
-    "year": "2000"
-}, {
-    "Client": "XYZ",
-    "sale": "215",
-    "year": "2002"
-}, {
-    "Client": "XYZ",
-    "sale": "179",
-    "year": "2004"
-}, {
-    "Client": "XYZ",
-    "sale": "199",
-    "year": "2006"
-}, {
-    "Client": "XYZ",
-    "sale": "134",
-    "year": "2008"
-}, {
-    "Client": "XYZ",
-    "sale": "176",
-    "year": "2013"
-}];
-var vis = d3.select("#visualisation"),
-    WIDTH = 1000,
-    HEIGHT = 500,
-    MARGINS = {
-        top: 50,
-        right: 20,
-        bottom: 50,
-        left: 50
+var Immigrants = [{
+    "total": 290806,
+    "year": "2016"
+},
+    {
+        "total": 285416,
+        "year": "2015"
     },
-    xScale = d3.scale.linear().range([MARGINS.left, WIDTH - MARGINS.right]).domain([d3.min(data, function(d) {
-        return d.year;
-    }), d3.max(data, function(d) {
-        return d.year;
-    })]),
-    yScale = d3.scale.linear().range([HEIGHT - MARGINS.top, MARGINS.bottom]).domain([d3.min(data, function(d) {
-        return d.sale;
-    }), d3.max(data, function(d) {
-        return d.sale;
-    })]),
+    {
+        "total": 282067,
+        "year": "2014"
+    },
+    {
+        "total": 279077,
+        "year": "2013"
+    },
+    {
+        "total": 276392,
+        "year": "2012"
+    },
+    {
+        "total": 273151,
+        "year": "2011"
+    },
+    {
+        "total": 268211,
+        "year": "2010"
+    },
+    {
+        "total": 262759,
+        "year": "2009"
+    },
+    {
+        "total": 258494,
+        "year": "2008"
+    },
+    {
+        "total": 256258,
+        "year": "2007"
+    },
+    {
+        "total": 255169,
+        "year": "2006"
+    },
+    {
+        "total": 254331,
+        "year": "2005"
+    }];
+var Natives = [{
+    "total": 403476,
+    "year": "2016"
+},
+    {
+        "total": 402732,
+        "year": "2015"
+    },
+    {
+        "total": 400093,
+        "year": "2014"
+    },
+    {
+        "total": 394645,
+        "year": "2013"
+    },
+    {
+        "total": 390813,
+        "year": "2012"
+    },
+    {
+        "total": 388035,
+        "year": "2011"
+    },
+    {
+        "total": 385009,
+        "year": "2010"
+    },
+    {
+        "total": 381948,
+        "year": "2009"
+    },
+    {
+        "total": 381374,
+        "year": "2008"
+    },
+    {
+        "total": 382104,
+        "year": "2007"
+    },
+    {
+        "total": 382746,
+        "year": "2006"
+    },
+    {
+        "total": 383897,
+        "year": "2005"
+    }];
+
+
+
+var margin = {top: 40, right: 80, bottom: 30, left: 50},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+var vis = d3.select("#multiline").append('svg')
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    console.log(Immigrants);
+    xScale = d3.scale.linear().range([margin.left, width - margin.right]).domain([2005, 2016]),
+    yScale = d3.scale.linear().range([height - margin.top, margin.bottom]).domain([200000, 500000]),
     xAxis = d3.svg.axis()
         .scale(xScale),
     yAxis = d3.svg.axis()
         .scale(yScale)
         .orient("left");
 
-var dataGroup = d3.nest()
-    .key(function(d) {
-        return d.Client;
-    })
-    .entries(data);
-
-
-lSpace = WIDTH/dataGroup.length;
-
 vis.append("svg:g")
     .attr("class", "x axis")
-    .attr("transform", "translate(0," + (HEIGHT - MARGINS.bottom) + ")")
+    .attr("font-family","Arial")
+    .attr("font-size", "12px")
+    .attr("color","black")
+    .attr("transform", "translate(0," + (height - margin.bottom) + ")")
     .call(xAxis);
 vis.append("svg:g")
     .attr("class", "y axis")
-    .attr("transform", "translate(" + (MARGINS.left) + ",0)")
+    .attr("transform", "translate(" + (margin.left) + ",0)")
     .call(yAxis);
 var lineGen = d3.svg.line()
     .x(function(d) {
+        console.log(d)
         return xScale(d.year);
     })
     .y(function(d) {
-        return yScale(d.sale);
+        return yScale(d.total);
     })
     .interpolate("basis");
-
-dataGroup.forEach(function(d, i) {
-    vis.append('svg:path')
-        .attr('d', lineGen(d.values))
-        .attr('stroke', 'blue')
-        .attr('stroke-width', 2)
-        .attr('fill', 'none');
-});
-
-vis.append("text")
-    .attr("x", (lSpace / 2) + i * lSpace)
-    .attr("y", HEIGHT)
-    .style("fill", "black")
-    .text(d.key);
-
-.legend {
-    font-size: 14px;
-    font-weight: bold;
-}
-
-vis.append("text")
-    .attr("x", (lSpace / 2) + i * lSpace)
-    .attr("y", HEIGHT)
-    .style("fill", "black")
-    .attr("class", "legend")
-    .text(d.key);
-
 vis.append('svg:path')
-    .attr('d', lineGen(d.values, xScale, yScale))
-    .attr('stroke', function(d, j) {
-        return "hsl(" + Math.random() * 360 + ",100%,50%)";
-    })
+    .attr('d', lineGen(Immigrants))
+    .attr('stroke', '#6b486b')
     .attr('stroke-width', 2)
-    .attr('id', 'line_' + d.key)
     .attr('fill', 'none');
+vis.append('svg:path')
+    .attr('d', lineGen(Natives))
+    .attr('stroke', '#ff8c00')
+    .attr('stroke-width', 2)
+    .attr('fill', 'none');
+
+
+vis.append("text")
+    .attr("id","title")
+    .attr("x", (width / 2))
+    .attr("y", 0 - (margin.top / 2))
+    .attr("text-anchor", "middle")
+    .attr("font-family", "Arial")
+    .attr("color", "grey")
+    .attr("font-size","16px")
+    .attr('font-weight', "700")
+    .text("Immigrants & Natives in Amsterdam");
+
+vis.append("text")
+    .attr("id","label")
+    .attr("x", (width * 0.93))
+    .attr("y", (height * 0.35))
+    .attr("text-anchor", "middle")
+    .text("Natives");
+
+vis.append("text")
+    .attr("id","label")
+    .attr("x", (width * 0.98))
+    .attr("y", (height * 0.66))
+    .attr("text-anchor", "middle")
+    .text("Non-Western Immigrants");

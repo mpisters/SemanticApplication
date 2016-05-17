@@ -31,4 +31,10 @@
 .legend{
     font-family: 'Arial', monospace;
     font-size: 12px;
+    padding-bottom:15px;
+}
+#chart {
+    width: 400px;
+    padding-bottom:15px;
+    height:550px;
 }

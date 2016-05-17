@@ -98,8 +98,8 @@ var Natives = [{
 
 
 var margin = {top: 40, right: 80, bottom: 30, left: 50},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    width = 700 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
 
 var vis = d3.select("#multiline").append('svg')
             .attr("width", width + margin.left + margin.right)
@@ -146,18 +146,6 @@ vis.append('svg:path')
     .attr('stroke', '#ff8c00')
     .attr('stroke-width', 2)
     .attr('fill', 'none');
-
-
-vis.append("text")
-    .attr("id","title")
-    .attr("x", (width / 2))
-    .attr("y", 0 - (margin.top / 2))
-    .attr("text-anchor", "middle")
-    .attr("font-family", "Arial")
-    .attr("color", "grey")
-    .attr("font-size","16px")
-    .attr('font-weight', "700")
-    .text("Immigrants & Natives in Amsterdam");
 
 vis.append("text")
     .attr("id","label")

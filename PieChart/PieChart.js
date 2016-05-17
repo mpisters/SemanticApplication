@@ -78,7 +78,7 @@ d3.xml("PieChart/data.xml", "application/xml", function(error, xml) {
         .append("svg:svg")
         .data([finalData])
         .attr("width", w)
-        .attr("height", h)
+        .attr("height",h )
         .append("svg:g")
         .attr("transform", "translate(" + r * 1.1 + "," + r * 1.1 + ")");
 
@@ -137,12 +137,12 @@ d3.xml("PieChart/data.xml", "application/xml", function(error, xml) {
 
     var legend = d3.select("#chart").append("svg")
         .attr("class", "legend")
-        .attr("width", r)
-        .attr("height", r * 2)
+        .attr("width", 100)
+        .attr("height", 170)
         .selectAll("g")
         .data(finalData)
         .enter().append("g")
-        .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+        .attr("transform", function(d, i) { return "translate(0," + i * 18 + ")"; });
 
     legend.append("rect")
         .attr("width", 18)
@@ -154,4 +154,5 @@ d3.xml("PieChart/data.xml", "application/xml", function(error, xml) {
         .attr("y", 9)
         .attr("dy", ".35em")
         .text(function(d) { return d.name; });
+    
 });

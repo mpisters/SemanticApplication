@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81440435-508e-43e9-8dd5-f759a7659945" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MultiLine/MultiLine.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MultiLine2/MultiLine2.css" afterPath="$PROJECT_DIR$/Multiline/MultiLine.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MultiLine2/MultiLine2.js" afterPath="$PROJECT_DIR$/Multiline/MultiLine.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MultiLine2/data.tsv" afterPath="$PROJECT_DIR$/Multiline/data.tsv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MultiLine2/data_alle_jaren.xml" afterPath="$PROJECT_DIR$/Multiline/data_alle_jaren.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.html" afterPath="$PROJECT_DIR$/main.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Multiline/data.tsv" afterPath="" />
     </list>
     <ignored path="WebApplicatie.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,7 +66,7 @@
       <file leaf-file-name="MultiLine.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Multiline/MultiLine.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
+            <state relative-caret-position="3168">
               <caret line="146" column="3" selection-start-line="146" selection-start-column="3" selection-end-line="146" selection-end-column="3" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
@@ -86,16 +80,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1584">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data.tsv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Multiline/data.tsv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7986">
-              <caret line="363" column="32" selection-start-line="363" selection-start-column="32" selection-end-line="363" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -344,18 +328,18 @@
       <workItem from="1463496541098" duration="68000" />
       <workItem from="1463563289540" duration="1219000" />
       <workItem from="1463650222969" duration="1339000" />
-      <workItem from="1463989191433" duration="10686000" />
+      <workItem from="1463989191433" duration="10772000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30036000" />
+    <option name="totallyTimeSpent" value="30122000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12242744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12242744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33146068" sideWeight="0.5060686" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33146068" sideWeight="0.4939314" order="1" side_tool="false" content_ui="tabs" />
@@ -729,7 +713,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Multiline/MultiLine.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
+        <state relative-caret-position="3168">
           <caret line="146" column="3" selection-start-line="146" selection-start-column="3" selection-end-line="146" selection-end-column="3" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />

@@ -107,7 +107,6 @@ var vis = d3.select("#multiline").append('svg')
             .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    console.log(Immigrants);
     xScale = d3.scale.linear().range([margin.left, width - margin.right]).domain([2005, 2016]),
     yScale = d3.scale.linear().range([height - margin.top, margin.bottom]).domain([200000, 500000]),
     xAxis = d3.svg.axis()
@@ -129,7 +128,6 @@ vis.append("svg:g")
     .call(yAxis);
 var lineGen = d3.svg.line()
     .x(function(d) {
-        console.log(d)
         return xScale(d.year);
     })
     .y(function(d) {

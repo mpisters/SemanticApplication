@@ -1,32 +1,32 @@
 /**
  * Created by miche on 23-5-2016.
  */
-var margin = {top: 20, right: 80, bottom: 30, left: 50},
+let margin = {top: 20, right: 80, bottom: 30, left: 50},
     width = 700 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
-var x = d3.scale.linear()
+let x = d3.scale.linear()
     .range([0,width]);
 
-var y = d3.scale.linear()
+let y = d3.scale.linear()
     .range([height, 0]);
 
-var color_1 = d3.scale.category10();
+let color_1 = d3.scale.category10();
 
-var xAxis = d3.svg.axis()
+let xAxis = d3.svg.axis()
     .scale(x)
     .orient("bottom");
 
-var yAxis = d3.svg.axis()
+let yAxis = d3.svg.axis()
     .scale(y)
     .orient("left");
 
-var line = d3.svg.line()
+let line = d3.svg.line()
     .interpolate("basis")
     .x(function(d) { return x(d.year); })
     .y(function(d) { return y(d.total); });
 
-var svg = d3.select("#multiline2").append("svg")
+let svg = d3.select("#multiline2").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -34,12 +34,12 @@ var svg = d3.select("#multiline2").append("svg")
 
 d3.xml("Multiline/data_alle_jaren.xml", "application/xml", function(xml) {
 
-    var nodes = d3.select(xml).selectAll("*")[0],
+    let nodes = d3.select(xml).selectAll("*")[0],
         links = nodes.slice(1).map(function (d) {
             return {source: d, value: d.innerHTML};
         });
 
-    var valueLiteral = links.map(function (item) {
+    let valueLiteral = links.map(function (item) {
         let newData = item.source;
         let xmlNode = newData.getElementsByTagName('literal');
         if (xmlNode.length> 0 && xmlNode.length < 2) {
@@ -50,7 +50,7 @@ d3.xml("Multiline/data_alle_jaren.xml", "application/xml", function(xml) {
         }
     });
 
-    var ListLiterals = function (data) {
+    let ListLiterals = function (data) {
         let newList = [];
         for (let i = 0; i < data.length; i++) {
             if (typeof data[i] === 'number') {
@@ -60,9 +60,9 @@ d3.xml("Multiline/data_alle_jaren.xml", "application/xml", function(xml) {
         return newList
     };
 
-    var ListOfValues = ListLiterals(valueLiteral);
-    var groupSize = 8;
-    var groups = ListOfValues.map(function(item, index){
+    let ListOfValues = ListLiterals(valueLiteral);
+    let groupSize = 8;
+    let groups = ListOfValues.map(function(item, index){
 
             return index % groupSize === 0 ? ListOfValues.slice(index, index + groupSize) : null;
         })
@@ -70,15 +70,15 @@ d3.xml("Multiline/data_alle_jaren.xml", "application/xml", function(xml) {
 
         });
 
-    var ListData = function(data) {
+    let ListData = function(data) {
         let total = data.length;
         let listImmigrants = [];
         let listNatives = [];
         let years = [];
         for (let i = 0; i < total; i++) {
-            var year = data[i][0];
-            var immigrants = data[i].slice(1,7).reduce((a,b) => a + b, 0);
-            var natives = data[i].slice(7,8);
+            let year = data[i][0];
+            let immigrants = data[i].slice(1,7).reduce((a,b) => a + b, 0);
+            let natives = data[i].slice(7,8);
             listImmigrants.push(immigrants);
             listNatives.push(natives[0]);
             years.push(year);
@@ -87,7 +87,7 @@ d3.xml("Multiline/data_alle_jaren.xml", "application/xml", function(xml) {
 
     };
 
-    var makeData = function(data) {
+    let makeData = function(data) {
         let immigrants = data[0];
         let natives = data[1];
         let years = data[2];
@@ -98,13 +98,13 @@ d3.xml("Multiline/data_alle_jaren.xml", "application/xml", function(xml) {
         return dataList;
     };
 
-    var lijst = ListData(groups);
+    let listOfData = ListData(groups);
 
-    let data = makeData(lijst);
+    let data = makeData(listOfData);
 
 color_1.domain(d3.keys(data[0]).filter(function(key) { return key !== "year"; }));
     
-    var population = color_1.domain().map(function(name) {
+    let population = color_1.domain().map(function(name) {
         return {
             name: name,
             values: data.map(function(d) {
@@ -128,7 +128,7 @@ color_1.domain(d3.keys(data[0]).filter(function(key) { return key !== "year"; })
         .attr("class", "y axis")
         .call(yAxis);
     
-    var item = svg.selectAll(".item")
+    let item = svg.selectAll(".item")
         .data(population)
         .enter().append("g")
         .attr("class", "item");

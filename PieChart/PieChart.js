@@ -1,22 +1,21 @@
-var w = 400,
+let w = 400,
     h = 400,
     r = 180,
     inner = 70;
 
 
-var color = d3.scale.ordinal()
+let color = d3.scale.ordinal()
     .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
 
 d3.xml("PieChart/data.xml", "application/xml", function(error, xml) {
     if (error) throw error;
 
-    var nodes = d3.select(xml).selectAll("*")[0],
+    let nodes = d3.select(xml).selectAll("*")[0],
         links = nodes.slice(1).map(function (d) {
             return {source: d, value: d.innerHTML};
-        }),
-        root = nodes[0];
+        });
 
-    var valueLiteral = links.map(function (item) {
+    let valueLiteral = links.map(function (item) {
         let newData = item.source;
         let xmlNode = newData.getElementsByTagName('literal');
         if (xmlNode.length> 0 && xmlNode.length < 2) {
@@ -27,7 +26,7 @@ d3.xml("PieChart/data.xml", "application/xml", function(error, xml) {
         }
     });
 
-    var ListLiterals = function (data) {
+    let ListLiterals = function (data) {
         let newList = [];
         for (let i = 0; i < data.length; i++) {
             if (typeof data[i] === 'number') {
@@ -37,7 +36,7 @@ d3.xml("PieChart/data.xml", "application/xml", function(error, xml) {
         return newList
     };
 
-    var names = links.map(function (item) {
+    let names = links.map(function (item) {
         let newData = item.source;
         let xmlNode = newData.getElementsByTagName('variable');
         if (xmlNode.length > 0) {
@@ -46,10 +45,10 @@ d3.xml("PieChart/data.xml", "application/xml", function(error, xml) {
         }
     });
 
-    var names = names[0];
+    let nameValues = names[0];
 
-    var listNames = function (names) {
-        var listValues = [];
+    let listNames = function (names) {
+        let listValues = [];
         for (let i = 0; i < names.length; i++) {
             let y = names[i].getAttribute('name');
             listValues.push(y);
@@ -66,23 +65,23 @@ d3.xml("PieChart/data.xml", "application/xml", function(error, xml) {
     };
 
 
-    let a = ListLiterals(valueLiteral);
-    let b = listNames(names);
-    let finalData = MakeData(a, b);
+    let ListofLiterals = ListLiterals(valueLiteral);
+    let ListofNameValues = listNames(nameValues);
+    let data = MakeData(ListofLiterals, ListofNameValues);
 
-    var total = d3.sum(finalData, function(d) {
+    let total = d3.sum(data, function(d) {
         return d3.sum(d3.values(d));
     });
 
-    var vis = d3.select("#chart")
+    let vis = d3.select("#chart")
         .append("svg:svg")
-        .data([finalData])
+        .data([data])
         .attr("width", w)
         .attr("height",h )
         .append("svg:g")
         .attr("transform", "translate(" + r * 1.1 + "," + r * 1.1 + ")");
 
-    var textTop = vis.append("text")
+    let textTop = vis.append("text")
         .attr("dy", ".35em")
         .style("text-anchor", "middle")
         .attr("class", "textTop")
@@ -95,18 +94,18 @@ d3.xml("PieChart/data.xml", "application/xml", function(error, xml) {
             .text(total)
             .attr("y", 10);
 
-    var arc = d3.svg.arc()
+    let arc = d3.svg.arc()
         .innerRadius(inner)
         .outerRadius(r);
 
-    var arcOver = d3.svg.arc()
+    let arcOver = d3.svg.arc()
         .innerRadius(inner + 5)
         .outerRadius(r + 5);
 
-    var pie = d3.layout.pie()
+    let pie = d3.layout.pie()
         .value(function(d) { return d.value; });
 
-    var arcs = vis.selectAll("g.slice")
+    let arcs = vis.selectAll("g.slice")
         .data(pie)
         .enter()
         .append("svg:g")
@@ -135,12 +134,12 @@ d3.xml("PieChart/data.xml", "application/xml", function(error, xml) {
         .attr("fill", function(d, i) { return color(i); } )
         .attr("d", arc);
 
-    var legend = d3.select("#chart").append("svg")
+    let legend = d3.select("#chart").append("svg")
         .attr("class", "legend")
         .attr("width", 100)
         .attr("height", 170)
         .selectAll("g")
-        .data(finalData)
+        .data(data)
         .enter().append("g")
         .attr("transform", function(d, i) { return "translate(0," + i * 18 + ")"; });
 

@@ -65,6 +65,32 @@
     </result>
     <result>
       <binding name="jaar">
+        <literal>2014</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">67490</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">12088</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">42211</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">73311</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">86967</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">129025</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">400093</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="jaar">
         <literal>2013</literal>
       </binding>
       <binding name="Surinamers">
@@ -297,31 +323,31 @@
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">383897</literal>
       </binding>
     </result>
-    <result>
-      <binding name="jaar">
-        <literal>2002</literal>
-      </binding>
-      <binding name="Surinamers">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">0</literal>
-      </binding>
-      <binding name="Antillians">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">0</literal>
-      </binding>
-      <binding name="Turkish">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">0</literal>
-      </binding>
-      <binding name="Maroccans">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">0</literal>
-      </binding>
-      <binding name="Others">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">0</literal>
-      </binding>
-      <binding name="Western">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">0</literal>
-      </binding>
-      <binding name="Natives">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">0</literal>
-      </binding>
-    </result>
+    <!--<result>-->
+    <!--<binding name="jaar">-->
+      <!--<literal>2002</literal>-->
+    <!--</binding>-->
+    <!--<binding name="Surinamers">-->
+      <!--<literal datatype="http://www.w3.org/2001/XMLSchema#decimal">0</literal>-->
+    <!--</binding>-->
+    <!--<binding name="Antillians">-->
+      <!--<literal datatype="http://www.w3.org/2001/XMLSchema#decimal">0</literal>-->
+    <!--</binding>-->
+    <!--<binding name="Turkish">-->
+      <!--<literal datatype="http://www.w3.org/2001/XMLSchema#decimal">0</literal>-->
+    <!--</binding>-->
+    <!--<binding name="Maroccans">-->
+      <!--<literal datatype="http://www.w3.org/2001/XMLSchema#decimal">0</literal>-->
+    <!--</binding>-->
+    <!--<binding name="Others">-->
+      <!--<literal datatype="http://www.w3.org/2001/XMLSchema#decimal">0</literal>-->
+    <!--</binding>-->
+    <!--<binding name="Western">-->
+      <!--<literal datatype="http://www.w3.org/2001/XMLSchema#decimal">0</literal>-->
+    <!--</binding>-->
+    <!--<binding name="Natives">-->
+      <!--<literal datatype="http://www.w3.org/2001/XMLSchema#decimal">0</literal>-->
+    <!--</binding>-->
+  <!--</result>-->
   </results>
 </sparql>

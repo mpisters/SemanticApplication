@@ -1,34 +1,34 @@
 /**
  * Created by miche on 23-5-2016.
  */
-let margin = {top: 20, right: 80, bottom: 30, left: 50},
-    width = 700 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+let margin = {top: 20, right: 80, bottom:100, left: 50},
+    width4 = 700 - margin.left - margin.right,
+    height4 = 600 - margin.top - margin.bottom;
 
 let x = d3.scale.linear()
-    .range([0,width]);
+    .range([0,width4]);
 
-let y = d3.scale.linear()
-    .range([height, 0]);
+let y4 = d3.scale.linear()
+    .range([height4, 0]);
 
 let mult_color = d3.scale.category10();
 
-let xAxis = d3.svg.axis()
+let xAxis4 = d3.svg.axis()
     .scale(x)
     .orient("bottom");
 
-let yAxis = d3.svg.axis()
-    .scale(y)
+let yAxis4 = d3.svg.axis()
+    .scale(y4)
     .orient("left");
 
 let line = d3.svg.line()
     .interpolate("basis")
     .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.total); });
+    .y(function(d) { return y4(d.total); });
 
-let svg = d3.select("#multiline2").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+let viz = d3.select("#multiline2").append("svg")
+    .attr("width", width4 + margin.left + margin.right)
+    .attr("height", height4 + margin.top + margin.bottom)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -118,25 +118,25 @@ mult_color.domain(d3.keys(data[0]).filter(function(key) { return key !== "year";
     //     d3.min(population, function(c) { return d3.min(c.values, function(v) { return v.total; }); }),
     //     d3.max(population, function(c) { return d3.max(c.values, function(v) { return v.total; }); })
     // ]);
-    y.domain([300000,500000]);
+    y4.domain([300000,500000]);
 
 
-    svg.append("g")
+    viz.append("g")
         .attr("font-family", "Arial")
         .attr("font-size", "11px")
         .attr("font-weight", "700")
         .attr("class", "x axis")
-        .attr("transform", "translate(0," + height + ")")
-        .call(xAxis);
+        .attr("transform", "translate(0," + height4 + ")")
+        .call(xAxis4);
     
-    svg.append("g")
+    viz.append("g")
         .attr("font-family", "Arial")
         .attr("font-size", "11px")
         .attr("font-weight", "700")
         .attr("class", "y axis")
-        .call(yAxis);
+        .call(yAxis4);
     
-    let item = svg.selectAll(".item")
+    let item = viz.selectAll(".item")
         .data(population)
         .enter().append("g")
         .attr("class", "item");
@@ -151,13 +151,13 @@ mult_color.domain(d3.keys(data[0]).filter(function(key) { return key !== "year";
         .attr("font-size", "12px")
         .attr("font-weight", "700")
         .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
-        .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.total) + ")"; })
+        .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y4(d.value.total) + ")"; })
         .attr("x", 3)
         .attr("dy", ".35em")
         .text(function(d) { return d.name; });
 
     // append a g for all the mouse over nonsense
-    let mouseG = svg.append("g")
+    let mouseG = viz.append("g")
         .attr("class", "mouse-over-effects");
 
 // this is the vertical line
@@ -193,8 +193,8 @@ mult_color.domain(d3.keys(data[0]).filter(function(key) { return key !== "year";
 
 // rect to capture mouse movements
     mouseG.append('svg:rect')
-        .attr('width', width)
-        .attr('height', height)
+        .attr('width', width4)
+        .attr('height', height4)
         .attr('fill', 'none')
         .attr('pointer-events', 'all')
         .on('mouseout', function() { // on mouse out hide line, circles and text
@@ -219,7 +219,7 @@ mult_color.domain(d3.keys(data[0]).filter(function(key) { return key !== "year";
             // move the vertical line
             d3.select(".mouse-line")
                 .attr("d", function() {
-                    let d = "M" + mouse[0] + "," + height;
+                    let d = "M" + mouse[0] + "," + height4;
                     d += " " + mouse[0] + "," + 0;
                     return d;
                 });
@@ -254,7 +254,7 @@ mult_color.domain(d3.keys(data[0]).filter(function(key) { return key !== "year";
                         .attr("font-family", "Arial")
                         .attr("font-size", "12px")
                         .attr("font-weight", "700")
-                        .text(y.invert(pos.y).toFixed(2));
+                        .text(y4.invert(pos.y).toFixed(2));
 
                     // return position
                     return "translate(" + mouse[0] + "," + pos.y +")";

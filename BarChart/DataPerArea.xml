@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+  <head>
+    <variable name="GebiedNaam"/>
+    <variable name="Surinamers"/>
+    <variable name="Antillians"/>
+    <variable name="Turkish"/>
+    <variable name="Maroccans"/>
+    <variable name="Others"/>
+    <variable name="Western"/>
+    <variable name="Natives"/>
+  </head>
+  <results>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>Centrum-West</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">1010</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">362</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">366</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">551</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">3547</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">11372</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">26268</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>Centrum-Oost</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">1563</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">349</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">487</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">893</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">3799</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">10203</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">25729</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>Westerpark</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">1896</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">395</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">732</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2538</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">3650</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">7031</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">19874</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>Bos en Lommer</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">1675</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">354</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">4089</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">6778</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">3301</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">4909</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">13959</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>Oud-West/De Baarsjes</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">3212</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">802</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">3036</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">5154</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">6317</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">14172</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">40090</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>Geuzenveld-Slotermeer-Sloterdijken</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2575</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">428</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">8469</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">11632</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">4637</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">5026</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">11973</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>Osdorp</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2810</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">439</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">4933</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">8753</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">4020</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">4925</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">12680</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>De Aker. Sloten en Nieuw Sloten</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2381</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">234</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2014</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2636</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2404</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">3965</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">14831</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>Slotervaart</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2037</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">307</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">3751</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">8274</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">4172</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">5986</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">13105</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>Oud-Zuid</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">1406</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">450</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">593</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">996</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">3792</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">13368</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">33929</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>Buitenveldert/Zuidas</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">788</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">237</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">367</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">411</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">3483</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">6127</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">12518</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>De Pijp/Rivierenbuurt</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2551</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">607</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">1159</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2699</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">5199</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">12985</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">39593</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>Oud-Oost</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2673</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">384</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">1925</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">4033</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">3552</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">5577</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">16719</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>Indische Buurt/Oostelijk Havengebied</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2989</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">430</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2539</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">5224</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">4154</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">6494</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">19634</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>Watergraafsmeer</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">1391</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">424</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">480</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">1322</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2655</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">5895</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">21283</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>IJburg/Zeeburgereiland</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2132</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">337</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">763</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2123</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2595</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">3336</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">11358</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>Noord-West</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2752</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">426</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2470</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">3345</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">4084</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">3805</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">20272</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>Oud-Noord</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">1784</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">345</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">958</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2532</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">3122</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">3327</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">14765</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>Noord-Oost</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2550</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">455</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2578</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">3388</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">4557</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">3308</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">12094</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>Bijlmer-Centrum</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">7661</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">1476</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">427</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">634</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">7444</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2484</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">4293</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>Bijlmer-Oost</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">8776</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">1533</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">264</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">559</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">7659</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">2604</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">5865</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>Gaasperdam/Driemond</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">9573</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">1481</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">237</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">610</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">6475</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">3475</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">12527</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="GebiedNaam">
+        <literal>buiten beschouwing</literal>
+      </binding>
+      <binding name="Surinamers">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">5</literal>
+      </binding>
+      <binding name="Antillians">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">0</literal>
+      </binding>
+      <binding name="Turkish">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">1</literal>
+      </binding>
+      <binding name="Maroccans">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">0</literal>
+      </binding>
+      <binding name="Others">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">20</literal>
+      </binding>
+      <binding name="Western">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">57</literal>
+      </binding>
+      <binding name="Natives">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">117</literal>
+      </binding>
+    </result>
+  </results>
+</sparql>

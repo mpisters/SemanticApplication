@@ -3,7 +3,7 @@ let margin2 = { top: 300, right: 0, bottom: 0, left: 220 },
     height2 = 600 - margin2.top - margin2.bottom,
     gridSize = Math.floor(width2 / 22),
     legendElementWidth = 100,
-    colors3 = ['#edf8fb','#b3cde3','#8c96c6','#88419d'],
+    colors3 = ['#e66101','#fdb863','#b2abd2','#5e3c99'],
     labels = ['unknown','low','average','high'];
 
 let img = d3.select("#heatmap").append("svg")
@@ -140,8 +140,7 @@ d3.xml("Heatmap/Heatmap.xml", "application/xml", function(xml) {
         .attr("x", -50)
         .attr("y", function (d, i) { return i * gridSize + -10; })
         .style("text-anchor", "end")
-        .attr("font-weight", "700")
-        .attr("font-size","13px");
+        .attr("font-size","14px");
 
     let timeLabels = img.selectAll(".timeLabel")
         .data(allAreas)
@@ -152,8 +151,7 @@ d3.xml("Heatmap/Heatmap.xml", "application/xml", function(xml) {
         .attr("dy", ".35em")
         .attr("transform", " rotate(270)")
         .style("text-anchor", "start")
-        .attr("font-weight", "700")
-        .attr("font-size","13px");
+        .attr("font-size","14px");
 
     var colorScale = d3.scale.quantile()
         .domain([0, 3])

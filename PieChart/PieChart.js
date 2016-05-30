@@ -4,7 +4,7 @@ let w = 400,
     inner = 70;
 
 
-let color = d3.scale.ordinal()
+let color4 = d3.scale.ordinal()
     .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
 
 d3.xml("PieChart/data.xml", "application/xml", function(error, xml) {
@@ -131,7 +131,7 @@ d3.xml("PieChart/data.xml", "application/xml", function(error, xml) {
         });
 
     arcs.append("svg:path")
-        .attr("fill", function(d, i) { return color(i); } )
+        .attr("fill", function(d, i) { return color4(i); } )
         .attr("d", arc);
 
     let legend = d3.select("#chart").append("svg")
@@ -146,7 +146,7 @@ d3.xml("PieChart/data.xml", "application/xml", function(error, xml) {
     legend.append("rect")
         .attr("width", 18)
         .attr("height", 18)
-        .style("fill", function(d, i) { return color(i); });
+        .style("fill", function(d, i) { return color4(i); });
 
     legend.append("text")
         .attr("x", 24)

@@ -5,14 +5,15 @@ rect.bordered {
 
 text.mono {
     font-size: 9pt;
-    font-family: Consolas, courier;
-    fill: #aaa;
+    font-family: Arial, monospace;
+    fill:#404040;
+    font-weight: 700;
 }
 
-text.axis-workweek {
+text.axis-areas {
     fill: #000;
 }
 
-text.axis-worktime {
+text.axis-domains {
     fill: #000;
 }

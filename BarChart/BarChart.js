@@ -1,27 +1,27 @@
-var margin4 = {top: 20, right: 20, bottom: 250, left: 75},
+let margin4 = {top: 20, right: 20, bottom: 250, left: 75},
     width5 = 1000 - margin4.left - margin4.right,
     height5 = 600 - margin4.top - margin4.bottom;
 
-var x0 = d3.scale.ordinal()
+let x0 = d3.scale.ordinal()
     .rangeRoundBands([0, width5], .1);
 
-var x1 = d3.scale.ordinal();
+let x1 = d3.scale.ordinal();
 
-var y5 = d3.scale.linear()
+let y5 = d3.scale.linear()
     .range([height5, 0]);
 
-var color5 = d3.scale.ordinal()
+let color5 = d3.scale.ordinal()
     .range(['#e66101','#fdb863','#b2abd2','#5e3c99']);
 
-var xAxis5 = d3.svg.axis()
+let xAxis5 = d3.svg.axis()
     .scale(x0)
     .orient("bottom");
 
-var yAxis5 = d3.svg.axis()
+let yAxis5 = d3.svg.axis()
     .scale(y5)
-    .orient("left")
+    .orient("left");
 
-var viz2 = d3.select("#BarChart").append("svg")
+let viz2 = d3.select("#BarChart").append("svg")
     .attr("width", width5 + margin4.left + margin4.right)
     .attr("height", height5 + margin4.top + margin4.bottom)
     .append("g")
@@ -39,8 +39,8 @@ d3.xml("BarChart/DataPerArea.xml", "application/xml", function(xml) {
         let newData = item.source;
         let xmlNode = newData.getElementsByTagName('literal');
         if (xmlNode.length> 0 && xmlNode.length < 2) {
-            let x = xmlNode;
-            let y = x[0].childNodes[0].nodeValue;
+
+            let y = xmlNode[0].childNodes[0].nodeValue;
             y = Number(y);
             return y
         }
@@ -79,9 +79,6 @@ d3.xml("BarChart/DataPerArea.xml", "application/xml", function(xml) {
 
     function MakeData(data){
         let dataList = [];
-        let immigrants = 0;
-        let natives = 0;
-        let population =0;
         for (let i = 0; i <data.length; i++){
             let immigrants = data[i].slice(1,7).reduce(function(a, b) { return a + b; }, 0);
             let natives = data[i][7];
@@ -93,7 +90,7 @@ d3.xml("BarChart/DataPerArea.xml", "application/xml", function(xml) {
         return dataList
     }
     let data = MakeData(dataList);
-    var itemNames = d3.keys(data[0]).filter(function(key) {
+    let itemNames = d3.keys(data[0]).filter(function(key) {
         if (key !== 'Area' && key !== 'items'){
             return key;
         }
@@ -134,7 +131,7 @@ d3.xml("BarChart/DataPerArea.xml", "application/xml", function(xml) {
         .attr("transform", "rotate(-90)")
         .text("Total");
 
-    var item = viz2.selectAll(".state")
+    let item = viz2.selectAll(".state")
         .data(data)
         .enter().append("g")
         .attr("class", "state")
@@ -151,7 +148,7 @@ d3.xml("BarChart/DataPerArea.xml", "application/xml", function(xml) {
             return height5 - y5(d.value); })
         .style("fill", function(d) { return color5(d.name); });
 
-    var legend4 = viz2.selectAll(".legend4")
+    let legend4 = viz2.selectAll(".legend4")
         .data(itemNames.slice().reverse())
         .enter().append("g")
         .attr("class", "legend4")

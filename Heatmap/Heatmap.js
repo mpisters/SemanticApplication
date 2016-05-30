@@ -153,11 +153,11 @@ d3.xml("Heatmap/Heatmap.xml", "application/xml", function(xml) {
         .style("text-anchor", "start")
         .attr("font-size","14px");
 
-    var colorScale = d3.scale.quantile()
+    let colorScale = d3.scale.quantile()
         .domain([0, 3])
         .range(colors3);
 
-    var cards = img.selectAll(".area")
+    let cards = img.selectAll(".area")
         .data(data3, function(d) {return d.domain+':'+d.area;});
 
             cards.append("title");

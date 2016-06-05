@@ -156,7 +156,7 @@
     <result>
       <binding name="Concentration_immigrants">
         <literal>Oud-Noord</literal>
-      </binding>
+      </binding>ba
       <binding name="two">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">55.3</literal>
       </binding>
@@ -571,6 +571,62 @@
     </result>
     <result>
       <binding name="Education">
+        <literal>Westerpark</literal>
+      </binding>
+      <binding name="three">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">54.5</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="Education">
+        <literal>Bos en Lommer</literal>
+      </binding>
+      <binding name="three">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">40.5</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="Education">
+        <literal>Oud-West/De Baarsjes</literal>
+      </binding>
+      <binding name="three">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">52.8</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="Education">
+        <literal>Geuzenveld-Slotermeer-Sloterdijken</literal>
+      </binding>
+      <binding name="three">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">35.4</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="Education">
+        <literal>Osdorp</literal>
+      </binding>
+      <binding name="three">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">37.8</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="Education">
+        <literal>De Aker. Sloten en Nieuw Sloten</literal>
+      </binding>
+      <binding name="three">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">49.6</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="Education">
+        <literal>Slotervaart</literal>
+      </binding>
+      <binding name="three">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">38.2</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="Education">
         <literal>Oud-Zuid</literal>
       </binding>
       <binding name="three">
@@ -591,6 +647,14 @@
       </binding>
       <binding name="three">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">60.7</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="Education">
+        <literal>Oud-Oost</literal>
+      </binding>
+      <binding name="three">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">54.7</literal>
       </binding>
     </result>
     <result>
@@ -619,10 +683,42 @@
     </result>
     <result>
       <binding name="Education">
-        <literal>Westerpark</literal>
+        <literal>Noord-West</literal>
       </binding>
-      <binding name="two">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">30</literal>
+      <binding name="three">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">45.5</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="Education">
+        <literal>Oud-Noord</literal>
+      </binding>
+      <binding name="three">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">46.5</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="Education">
+        <literal>Noord-Oost</literal>
+      </binding>
+      <binding name="three">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">41.8</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="Education">
+        <literal>Gaasperdam/Driemond</literal>
+      </binding>
+      <binding name="three">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">31.7</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="Education">
+        <literal>buiten beschouwing</literal>
+      </binding>
+      <binding name="three">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">52.7</literal>
       </binding>
     </result>
     <result>
@@ -631,14 +727,6 @@
       </binding>
       <binding name="two">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">38.5</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Oud-West/De Baarsjes</literal>
-      </binding>
-      <binding name="two">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">30.6</literal>
       </binding>
     </result>
     <result>
@@ -671,14 +759,6 @@
       </binding>
       <binding name="two">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">42.8</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Oud-Oost</literal>
-      </binding>
-      <binding name="two">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">30.2</literal>
       </binding>
     </result>
     <result>
@@ -727,62 +807,6 @@
       </binding>
       <binding name="two">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">46.4</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Bos en Lommer</literal>
-      </binding>
-      <binding name="one">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">20.4</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Geuzenveld-Slotermeer-Sloterdijken</literal>
-      </binding>
-      <binding name="one">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">21.2</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Osdorp</literal>
-      </binding>
-      <binding name="one">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">20.1</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Noord-Oost</literal>
-      </binding>
-      <binding name="one">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">24.7</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Bijlmer-Centrum</literal>
-      </binding>
-      <binding name="one">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">26.8</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Bijlmer-Oost</literal>
-      </binding>
-      <binding name="one">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">25.4</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Gaasperdam/Driemond</literal>
-      </binding>
-      <binding name="one">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">20.4</literal>
       </binding>
     </result>
     <result>

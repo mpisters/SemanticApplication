@@ -5,7 +5,7 @@
       <binding name="Concentration_immigrants">
         <literal>Geuzenveld-Slotermeer-Sloterdijken</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">28.1</literal>
       </binding>
     </result>
@@ -13,7 +13,7 @@
       <binding name="Concentration_immigrants">
         <literal>Bijlmer-Centrum</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">16.9</literal>
       </binding>
     </result>
@@ -21,7 +21,7 @@
       <binding name="Concentration_immigrants">
         <literal>Bijlmer-Oost</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">21.3</literal>
       </binding>
     </result>
@@ -29,7 +29,7 @@
       <binding name="Concentration_immigrants">
         <literal>Centrum-West</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">62</literal>
       </binding>
     </result>
@@ -37,7 +37,7 @@
       <binding name="Concentration_immigrants">
         <literal>Centrum-Oost</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">61</literal>
       </binding>
     </result>
@@ -45,7 +45,7 @@
       <binding name="Concentration_immigrants">
         <literal>Westerpark</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">55.8</literal>
       </binding>
     </result>
@@ -53,7 +53,7 @@
       <binding name="Concentration_immigrants">
         <literal>Bos en Lommer</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">38.4</literal>
       </binding>
     </result>
@@ -61,7 +61,7 @@
       <binding name="Concentration_immigrants">
         <literal>Oud-West/De Baarsjes</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">55.8</literal>
       </binding>
     </result>
@@ -69,7 +69,7 @@
       <binding name="Concentration_immigrants">
         <literal>Osdorp</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">35.3</literal>
       </binding>
     </result>
@@ -77,7 +77,7 @@
       <binding name="Concentration_immigrants">
         <literal>De Aker. Sloten en Nieuw Sloten</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">53.8</literal>
       </binding>
     </result>
@@ -85,7 +85,7 @@
       <binding name="Concentration_immigrants">
         <literal>Slotervaart</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">36</literal>
       </binding>
     </result>
@@ -93,7 +93,7 @@
       <binding name="Concentration_immigrants">
         <literal>Oud-Zuid</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">63.8</literal>
       </binding>
     </result>
@@ -101,7 +101,7 @@
       <binding name="Concentration_immigrants">
         <literal>Buitenveldert/Zuidas</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">55.6</literal>
       </binding>
     </result>
@@ -109,7 +109,7 @@
       <binding name="Concentration_immigrants">
         <literal>De Pijp/Rivierenbuurt</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">61.7</literal>
       </binding>
     </result>
@@ -117,7 +117,7 @@
       <binding name="Concentration_immigrants">
         <literal>Oud-Oost</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">47.5</literal>
       </binding>
     </result>
@@ -125,7 +125,7 @@
       <binding name="Concentration_immigrants">
         <literal>Indische Buurt/Oostelijk Havengebied</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">47.3</literal>
       </binding>
     </result>
@@ -133,7 +133,7 @@
       <binding name="Concentration_immigrants">
         <literal>Watergraafsmeer</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">65.6</literal>
       </binding>
     </result>
@@ -141,7 +141,7 @@
       <binding name="Concentration_immigrants">
         <literal>IJburg/Zeeburgereiland</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">50.5</literal>
       </binding>
     </result>
@@ -149,7 +149,7 @@
       <binding name="Concentration_immigrants">
         <literal>Noord-West</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">56.3</literal>
       </binding>
     </result>
@@ -157,7 +157,7 @@
       <binding name="Concentration_immigrants">
         <literal>Oud-Noord</literal>
       </binding>ba
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">55.3</literal>
       </binding>
     </result>
@@ -165,7 +165,7 @@
       <binding name="Concentration_immigrants">
         <literal>Noord-Oost</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">42.8</literal>
       </binding>
     </result>
@@ -173,7 +173,7 @@
       <binding name="Concentration_immigrants">
         <literal>Gaasperdam/Driemond</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">37.3</literal>
       </binding>
     </result>
@@ -181,7 +181,7 @@
       <binding name="Concentration_immigrants">
         <literal>buiten beschouwing</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">53.3</literal>
       </binding>
     </result>
@@ -189,7 +189,7 @@
       <binding name="Criminality_rate">
         <literal>Centrum-West</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">119</literal>
       </binding>
     </result>
@@ -197,7 +197,7 @@
       <binding name="Criminality_rate">
         <literal>Centrum-Oost</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">132</literal>
       </binding>
     </result>
@@ -205,7 +205,7 @@
       <binding name="Criminality_rate">
         <literal>Bos en Lommer</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">103</literal>
       </binding>
     </result>
@@ -213,7 +213,7 @@
       <binding name="Criminality_rate">
         <literal>Geuzenveld-Slotermeer-Sloterdijken</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">127</literal>
       </binding>
     </result>
@@ -221,7 +221,7 @@
       <binding name="Criminality_rate">
         <literal>Osdorp</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">106</literal>
       </binding>
     </result>
@@ -229,7 +229,7 @@
       <binding name="Criminality_rate">
         <literal>Slotervaart</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">106</literal>
       </binding>
     </result>
@@ -237,7 +237,7 @@
       <binding name="Criminality_rate">
         <literal>Oud-Zuid</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">92</literal>
       </binding>
     </result>
@@ -245,7 +245,7 @@
       <binding name="Criminality_rate">
         <literal>Oud-Oost</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">114</literal>
       </binding>
     </result>
@@ -253,7 +253,7 @@
       <binding name="Criminality_rate">
         <literal>Oud-Noord</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">115</literal>
       </binding>
     </result>
@@ -261,7 +261,7 @@
       <binding name="Criminality_rate">
         <literal>Noord-Oost</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">120</literal>
       </binding>
     </result>
@@ -269,7 +269,7 @@
       <binding name="Criminality_rate">
         <literal>Bijlmer-Centrum</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">121</literal>
       </binding>
     </result>
@@ -277,7 +277,7 @@
       <binding name="Criminality_rate">
         <literal>Bijlmer-Oost</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">114</literal>
       </binding>
     </result>
@@ -285,7 +285,7 @@
       <binding name="Criminality_rate">
         <literal>Gaasperdam/Driemond</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">100</literal>
       </binding>
     </result>
@@ -293,7 +293,7 @@
       <binding name="Criminality_rate">
         <literal>Westerpark</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">86</literal>
       </binding>
     </result>
@@ -301,7 +301,7 @@
       <binding name="Criminality_rate">
         <literal>Oud-West/De Baarsjes</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">88</literal>
       </binding>
     </result>
@@ -309,7 +309,7 @@
       <binding name="Criminality_rate">
         <literal>De Aker. Sloten en Nieuw Sloten</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">77</literal>
       </binding>
     </result>
@@ -317,7 +317,7 @@
       <binding name="Criminality_rate">
         <literal>Buitenveldert/Zuidas</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">56</literal>
       </binding>
     </result>
@@ -325,7 +325,7 @@
       <binding name="Criminality_rate">
         <literal>De Pijp/Rivierenbuurt</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">74</literal>
       </binding>
     </result>
@@ -333,7 +333,7 @@
       <binding name="Criminality_rate">
         <literal>Indische Buurt/Oostelijk Havengebied</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">90</literal>
       </binding>
     </result>
@@ -341,7 +341,7 @@
       <binding name="Criminality_rate">
         <literal>Watergraafsmeer</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">88</literal>
       </binding>
     </result>
@@ -349,7 +349,7 @@
       <binding name="Criminality_rate">
         <literal>IJburg/Zeeburgereiland</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">85</literal>
       </binding>
     </result>
@@ -357,7 +357,7 @@
       <binding name="Criminality_rate">
         <literal>Noord-West</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">82</literal>
       </binding>
     </result>
@@ -365,7 +365,7 @@
       <binding name="Criminality_rate">
         <literal>buiten beschouwing</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">0</literal>
       </binding>
     </result>
@@ -373,7 +373,7 @@
       <binding name="Depravation">
         <literal>Centrum-West</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">30</literal>
       </binding>
     </result>
@@ -381,7 +381,7 @@
       <binding name="Depravation">
         <literal>Westerpark</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">30</literal>
       </binding>
     </result>
@@ -389,7 +389,7 @@
       <binding name="Depravation">
         <literal>Bos en Lommer</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">30</literal>
       </binding>
     </result>
@@ -397,7 +397,7 @@
       <binding name="Depravation">
         <literal>Oud-West/De Baarsjes</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">29</literal>
       </binding>
     </result>
@@ -405,7 +405,7 @@
       <binding name="Depravation">
         <literal>Geuzenveld-Slotermeer-Sloterdijken</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">35</literal>
       </binding>
     </result>
@@ -413,7 +413,7 @@
       <binding name="Depravation">
         <literal>Osdorp</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">30</literal>
       </binding>
     </result>
@@ -421,7 +421,7 @@
       <binding name="Depravation">
         <literal>Slotervaart</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">33</literal>
       </binding>
     </result>
@@ -429,7 +429,7 @@
       <binding name="Depravation">
         <literal>De Pijp/Rivierenbuurt</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">29</literal>
       </binding>
     </result>
@@ -437,7 +437,7 @@
       <binding name="Depravation">
         <literal>Oud-Oost</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">29</literal>
       </binding>
     </result>
@@ -445,7 +445,7 @@
       <binding name="Depravation">
         <literal>Noord-West</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">35</literal>
       </binding>
     </result>
@@ -453,7 +453,7 @@
       <binding name="Depravation">
         <literal>Oud-Noord</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">40</literal>
       </binding>
     </result>
@@ -461,7 +461,7 @@
       <binding name="Depravation">
         <literal>Noord-Oost</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">32</literal>
       </binding>
     </result>
@@ -469,7 +469,7 @@
       <binding name="Depravation">
         <literal>Bijlmer-Centrum</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">29</literal>
       </binding>
     </result>
@@ -477,7 +477,7 @@
       <binding name="Depravation">
         <literal>Gaasperdam/Driemond</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">31</literal>
       </binding>
     </result>
@@ -485,7 +485,7 @@
       <binding name="Depravation">
         <literal>buiten beschouwing</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">29</literal>
       </binding>
     </result>
@@ -493,7 +493,7 @@
       <binding name="Depravation">
         <literal>Centrum-Oost</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">27</literal>
       </binding>
     </result>
@@ -501,7 +501,7 @@
       <binding name="Depravation">
         <literal>De Aker. Sloten en Nieuw Sloten</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">26</literal>
       </binding>
     </result>
@@ -509,7 +509,7 @@
       <binding name="Depravation">
         <literal>Oud-Zuid</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">25</literal>
       </binding>
     </result>
@@ -517,7 +517,7 @@
       <binding name="Depravation">
         <literal>Buitenveldert/Zuidas</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">20</literal>
       </binding>
     </result>
@@ -525,7 +525,7 @@
       <binding name="Depravation">
         <literal>Indische Buurt/Oostelijk Havengebied</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">27</literal>
       </binding>
     </result>
@@ -533,7 +533,7 @@
       <binding name="Depravation">
         <literal>Watergraafsmeer</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">22</literal>
       </binding>
     </result>
@@ -541,7 +541,7 @@
       <binding name="Depravation">
         <literal>IJburg/Zeeburgereiland</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">25</literal>
       </binding>
     </result>
@@ -549,7 +549,7 @@
       <binding name="Depravation">
         <literal>Bijlmer-Oost</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">27</literal>
       </binding>
     </result>
@@ -557,7 +557,7 @@
       <binding name="Education">
         <literal>Centrum-West</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">80.5</literal>
       </binding>
     </result>
@@ -565,7 +565,7 @@
       <binding name="Education">
         <literal>Centrum-Oost</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">82</literal>
       </binding>
     </result>
@@ -573,7 +573,7 @@
       <binding name="Education">
         <literal>Westerpark</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">54.5</literal>
       </binding>
     </result>
@@ -581,7 +581,7 @@
       <binding name="Education">
         <literal>Bos en Lommer</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">40.5</literal>
       </binding>
     </result>
@@ -589,7 +589,7 @@
       <binding name="Education">
         <literal>Oud-West/De Baarsjes</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">52.8</literal>
       </binding>
     </result>
@@ -597,7 +597,7 @@
       <binding name="Education">
         <literal>Geuzenveld-Slotermeer-Sloterdijken</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">35.4</literal>
       </binding>
     </result>
@@ -605,7 +605,7 @@
       <binding name="Education">
         <literal>Osdorp</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">37.8</literal>
       </binding>
     </result>
@@ -613,7 +613,7 @@
       <binding name="Education">
         <literal>De Aker. Sloten en Nieuw Sloten</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">49.6</literal>
       </binding>
     </result>
@@ -621,7 +621,7 @@
       <binding name="Education">
         <literal>Slotervaart</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">38.2</literal>
       </binding>
     </result>
@@ -629,7 +629,7 @@
       <binding name="Education">
         <literal>Oud-Zuid</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">82.4</literal>
       </binding>
     </result>
@@ -637,7 +637,7 @@
       <binding name="Education">
         <literal>Buitenveldert/Zuidas</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">71.2</literal>
       </binding>
     </result>
@@ -645,7 +645,7 @@
       <binding name="Education">
         <literal>De Pijp/Rivierenbuurt</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">60.7</literal>
       </binding>
     </result>
@@ -653,7 +653,7 @@
       <binding name="Education">
         <literal>Oud-Oost</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">54.7</literal>
       </binding>
     </result>
@@ -661,7 +661,7 @@
       <binding name="Education">
         <literal>Indische Buurt/Oostelijk Havengebied</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">59</literal>
       </binding>
     </result>
@@ -669,7 +669,7 @@
       <binding name="Education">
         <literal>Watergraafsmeer</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">76.3</literal>
       </binding>
     </result>
@@ -677,7 +677,7 @@
       <binding name="Education">
         <literal>IJburg/Zeeburgereiland</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">60.3</literal>
       </binding>
     </result>
@@ -685,7 +685,7 @@
       <binding name="Education">
         <literal>Noord-West</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">45.5</literal>
       </binding>
     </result>
@@ -693,7 +693,7 @@
       <binding name="Education">
         <literal>Oud-Noord</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">46.5</literal>
       </binding>
     </result>
@@ -701,7 +701,7 @@
       <binding name="Education">
         <literal>Noord-Oost</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">41.8</literal>
       </binding>
     </result>
@@ -709,7 +709,7 @@
       <binding name="Education">
         <literal>Gaasperdam/Driemond</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">31.7</literal>
       </binding>
     </result>
@@ -717,7 +717,7 @@
       <binding name="Education">
         <literal>buiten beschouwing</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">52.7</literal>
       </binding>
     </result>
@@ -725,7 +725,7 @@
       <binding name="Education">
         <literal>Bos en Lommer</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">38.5</literal>
       </binding>
     </result>
@@ -733,7 +733,7 @@
       <binding name="Education">
         <literal>Geuzenveld-Slotermeer-Sloterdijken</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">40.5</literal>
       </binding>
     </result>
@@ -741,7 +741,7 @@
       <binding name="Education">
         <literal>Osdorp</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">39.8</literal>
       </binding>
     </result>
@@ -749,7 +749,7 @@
       <binding name="Education">
         <literal>De Aker. Sloten en Nieuw Sloten</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">37.5</literal>
       </binding>
     </result>
@@ -757,7 +757,7 @@
       <binding name="Education">
         <literal>Slotervaart</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">42.8</literal>
       </binding>
     </result>
@@ -765,7 +765,7 @@
       <binding name="Education">
         <literal>Noord-West</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">34</literal>
       </binding>
     </result>
@@ -773,7 +773,7 @@
       <binding name="Education">
         <literal>Oud-Noord</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">32.4</literal>
       </binding>
     </result>
@@ -781,7 +781,7 @@
       <binding name="Education">
         <literal>Noord-Oost</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">32.1</literal>
       </binding>
     </result>
@@ -789,7 +789,7 @@
       <binding name="Education">
         <literal>Bijlmer-Centrum</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">42.9</literal>
       </binding>
     </result>
@@ -797,7 +797,7 @@
       <binding name="Education">
         <literal>Bijlmer-Oost</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">42.4</literal>
       </binding>
     </result>
@@ -805,7 +805,7 @@
       <binding name="Education">
         <literal>Gaasperdam/Driemond</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">46.4</literal>
       </binding>
     </result>
@@ -813,7 +813,7 @@
       <binding name="Perception_of_insecurity">
         <literal>Geuzenveld-Slotermeer-Sloterdijken</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">143</literal>
       </binding>
     </result>
@@ -821,7 +821,7 @@
       <binding name="Perception_of_insecurity">
         <literal>Osdorp</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">147</literal>
       </binding>
     </result>
@@ -829,7 +829,7 @@
       <binding name="Perception_of_insecurity">
         <literal>Noord-West</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">126</literal>
       </binding>
     </result>
@@ -837,7 +837,7 @@
       <binding name="Perception_of_insecurity">
         <literal>Noord-Oost</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">131</literal>
       </binding>
     </result>
@@ -845,7 +845,7 @@
       <binding name="Perception_of_insecurity">
         <literal>Centrum-West</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">87</literal>
       </binding>
     </result>
@@ -853,7 +853,7 @@
       <binding name="Perception_of_insecurity">
         <literal>Centrum-Oost</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">81</literal>
       </binding>
     </result>
@@ -861,7 +861,7 @@
       <binding name="Perception_of_insecurity">
         <literal>Westerpark</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">80</literal>
       </binding>
     </result>
@@ -869,7 +869,7 @@
       <binding name="Perception_of_insecurity">
         <literal>Oud-West/De Baarsjes</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">89</literal>
       </binding>
     </result>
@@ -877,7 +877,7 @@
       <binding name="Perception_of_insecurity">
         <literal>Oud-Zuid</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">72</literal>
       </binding>
     </result>
@@ -885,7 +885,7 @@
       <binding name="Perception_of_insecurity">
         <literal>Buitenveldert/Zuidas</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">82</literal>
       </binding>
     </result>
@@ -893,7 +893,7 @@
       <binding name="Perception_of_insecurity">
         <literal>De Pijp/Rivierenbuurt</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">80</literal>
       </binding>
     </result>
@@ -901,7 +901,7 @@
       <binding name="Perception_of_insecurity">
         <literal>Watergraafsmeer</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">81</literal>
       </binding>
     </result>
@@ -909,7 +909,7 @@
       <binding name="Perception_of_insecurity">
         <literal>Bos en Lommer</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">112</literal>
       </binding>
     </result>
@@ -917,7 +917,7 @@
       <binding name="Perception_of_insecurity">
         <literal>De Aker. Sloten en Nieuw Sloten</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">118</literal>
       </binding>
     </result>
@@ -925,7 +925,7 @@
       <binding name="Perception_of_insecurity">
         <literal>Slotervaart</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">125</literal>
       </binding>
     </result>
@@ -933,7 +933,7 @@
       <binding name="Perception_of_insecurity">
         <literal>Oud-Oost</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">113</literal>
       </binding>
     </result>
@@ -941,7 +941,7 @@
       <binding name="Perception_of_insecurity">
         <literal>Indische Buurt/Oostelijk Havengebied</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">97</literal>
       </binding>
     </result>
@@ -949,7 +949,7 @@
       <binding name="Perception_of_insecurity">
         <literal>IJburg/Zeeburgereiland</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">106</literal>
       </binding>
     </result>
@@ -957,7 +957,7 @@
       <binding name="Perception_of_insecurity">
         <literal>Oud-Noord</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">121</literal>
       </binding>
     </result>
@@ -965,7 +965,7 @@
       <binding name="Perception_of_insecurity">
         <literal>Bijlmer-Centrum</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">125</literal>
       </binding>
     </result>
@@ -973,7 +973,7 @@
       <binding name="Perception_of_insecurity">
         <literal>Bijlmer-Oost</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">117</literal>
       </binding>
     </result>
@@ -981,7 +981,7 @@
       <binding name="Perception_of_insecurity">
         <literal>Gaasperdam/Driemond</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">113</literal>
       </binding>
     </result>
@@ -989,7 +989,7 @@
       <binding name="Tensions">
         <literal>Bos en Lommer</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">110</literal>
       </binding>
     </result>
@@ -997,7 +997,7 @@
       <binding name="Tensions">
         <literal>Geuzenveld-Slotermeer-Sloterdijken</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">115</literal>
       </binding>
     </result>
@@ -1005,7 +1005,7 @@
       <binding name="Tensions">
         <literal>Osdorp</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">117</literal>
       </binding>
     </result>
@@ -1013,7 +1013,7 @@
       <binding name="Tensions">
         <literal>Slotervaart</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">112</literal>
       </binding>
     </result>
@@ -1021,7 +1021,7 @@
       <binding name="Tensions">
         <literal>IJburg/Zeeburgereiland</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">108</literal>
       </binding>
     </result>
@@ -1029,7 +1029,7 @@
       <binding name="Tensions">
         <literal>Noord-West</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">109</literal>
       </binding>
     </result>
@@ -1037,7 +1037,7 @@
       <binding name="Tensions">
         <literal>Oud-Noord</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">109</literal>
       </binding>
     </result>
@@ -1045,7 +1045,7 @@
       <binding name="Tensions">
         <literal>Noord-Oost</literal>
       </binding>
-      <binding name="three">
+      <binding name="high">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">113</literal>
       </binding>
     </result>
@@ -1053,7 +1053,7 @@
       <binding name="Tensions">
         <literal>Westerpark</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">97</literal>
       </binding>
     </result>
@@ -1061,7 +1061,7 @@
       <binding name="Tensions">
         <literal>Oud-West/De Baarsjes</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">101</literal>
       </binding>
     </result>
@@ -1069,7 +1069,7 @@
       <binding name="Tensions">
         <literal>De Aker. Sloten en Nieuw Sloten</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">106</literal>
       </binding>
     </result>
@@ -1077,7 +1077,7 @@
       <binding name="Tensions">
         <literal>Buitenveldert/Zuidas</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">93</literal>
       </binding>
     </result>
@@ -1085,7 +1085,7 @@
       <binding name="Tensions">
         <literal>De Pijp/Rivierenbuurt</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">95</literal>
       </binding>
     </result>
@@ -1093,7 +1093,7 @@
       <binding name="Tensions">
         <literal>Oud-Oost</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">103</literal>
       </binding>
     </result>
@@ -1101,7 +1101,7 @@
       <binding name="Tensions">
         <literal>Indische Buurt/Oostelijk Havengebied</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">106</literal>
       </binding>
     </result>
@@ -1109,7 +1109,7 @@
       <binding name="Tensions">
         <literal>Bijlmer-Centrum</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">104</literal>
       </binding>
     </result>
@@ -1117,7 +1117,7 @@
       <binding name="Tensions">
         <literal>Bijlmer-Oost</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">100</literal>
       </binding>
     </result>
@@ -1125,7 +1125,7 @@
       <binding name="Tensions">
         <literal>Gaasperdam/Driemond</literal>
       </binding>
-      <binding name="two">
+      <binding name="average">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">102</literal>
       </binding>
     </result>
@@ -1133,7 +1133,7 @@
       <binding name="Tensions">
         <literal>Centrum-West</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">88</literal>
       </binding>
     </result>
@@ -1141,7 +1141,7 @@
       <binding name="Tensions">
         <literal>Centrum-Oost</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">87</literal>
       </binding>
     </result>
@@ -1149,7 +1149,7 @@
       <binding name="Tensions">
         <literal>Oud-Zuid</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">85</literal>
       </binding>
     </result>
@@ -1157,7 +1157,7 @@
       <binding name="Tensions">
         <literal>Watergraafsmeer</literal>
       </binding>
-      <binding name="one">
+      <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">89</literal>
       </binding>
     </result>

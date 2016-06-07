@@ -144,7 +144,6 @@ d3.xml("BarChart/DataPerArea.xml", "application/xml", function(xml) {
         .attr("x", function(d) {return x1(d.name); })
         .attr("y", function(d) { return y5(d.value); })
         .attr("height", function(d) {
-            console.log(d);
             return height5 - y5(d.value); })
         .style("fill", function(d) { return color5(d.name); });
 

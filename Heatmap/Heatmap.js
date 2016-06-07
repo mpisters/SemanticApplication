@@ -12,7 +12,7 @@ let img = d3.select("#heatmap").append("svg")
     .append("g")
     .attr("transform", "translate(" + margin2.left + "," + margin2.top + ")");
 
-d3.xml("Heatmap/Heatmap.xml", "application/xml", function(xml) {
+d3.xml("Heatmap/HeatMap.xml", "application/xml", function(xml) {
     let nodes = d3.select(xml).selectAll("*")[0],
         links = nodes.slice(1).map(function (d) {
             return {source: d, value: d.innerHTML};
@@ -24,10 +24,10 @@ d3.xml("Heatmap/Heatmap.xml", "application/xml", function(xml) {
         if (xmlNode.length > 1) {
             let x = xmlNode[1];
             let valueName = x.getAttribute('name');
-            if (valueName === 'one') {
+            if (valueName === 'low') {
                 return 1;
             }
-            else if(valueName === 'two'){
+            else if(valueName === 'average'){
                 return 2;
             }
             else{
@@ -115,7 +115,7 @@ d3.xml("Heatmap/Heatmap.xml", "application/xml", function(xml) {
         return List
     };
 
-    let AreaListNumbers = changeAreasToNumber(allDomainsNumbers, Data[1])
+    let AreaListNumbers = changeAreasToNumber(allDomainsNumbers, Data[1]);
 
     let data2 = [];
     data2.push(changeStringToNumber(Data[0], "Concentration_immigrants"));

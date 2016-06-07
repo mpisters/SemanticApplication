@@ -9,66 +9,21 @@ let color4 = d3.scale.ordinal()
 
 d3.xml("PieChart/data.xml", "application/xml", function(error, xml) {
     if (error) throw error;
-
-    let nodes = d3.select(xml).selectAll("*")[0],
-        links = nodes.slice(1).map(function (d) {
-            return {source: d, value: d.innerHTML};
-        });
-
-    let valueLiteral = links.map(function (item) {
-        let newData = item.source;
-        let xmlNode = newData.getElementsByTagName('literal');
-        if (xmlNode.length> 0 && xmlNode.length < 2) {
-            let x = xmlNode;
-            let y = x[0].childNodes[0].nodeValue;
-            y = Number(y);
-            return y
-        }
+    let ListOfAllValues = [].map.call(xml.querySelectorAll("binding"), function(result) {
+        let bindingName = result.getAttribute('name');
+        let value =result.childNodes[1].innerHTML;
+        return [bindingName,value]
     });
 
-    let ListLiterals = function (data) {
-        let newList = [];
+    let MakeData = function (data) {
+        let dataList = [];
         for (let i = 0; i < data.length; i++) {
-            if (typeof data[i] === 'number') {
-                newList.push(data[i])
-            }
+            dataList.push({'name': data[i][0], 'value': data[i][1]})
         }
-        return newList
+        return dataList
     };
 
-    let names = links.map(function (item) {
-        let newData = item.source;
-        let xmlNode = newData.getElementsByTagName('variable');
-        if (xmlNode.length > 0) {
-            let x = xmlNode;
-            return x
-        }
-    });
-
-    let nameValues = names[0];
-
-    let listNames = function (names) {
-        let listValues = [];
-        for (let i = 0; i < names.length; i++) {
-            let y = names[i].getAttribute('name');
-            listValues.push(y);
-        }
-        return listValues
-    };
-
-    let MakeData = function (listA, listB) {
-        let data = [];
-        for (let i = 0; i < listA.length; i++) {
-            data.push({'name': listB[i], 'value': listA[i]})
-        }
-        return data
-    };
-
-
-    let ListofLiterals = ListLiterals(valueLiteral);
-    let ListofNameValues = listNames(nameValues);
-    let data = MakeData(ListofLiterals, ListofNameValues);
-
+    let data = MakeData(ListOfAllValues);
     let total = d3.sum(data, function(d) {
         return d3.sum(d3.values(d));
     });
@@ -117,7 +72,7 @@ d3.xml("PieChart/data.xml", "application/xml", function(error, xml) {
 
             textTop.text(d3.select(this).datum().data.name)
                 .attr("y", -10);
-            textBottom.text(d3.select(this).datum().data.value.toFixed(2))
+            textBottom.text(d3.select(this).datum().data.value)
                 .attr("y", 10);
         })
         .on("mouseout", function(d) {

@@ -72,14 +72,11 @@ d3.xml("BarChart/DataPerArea.xml", "application/xml", function(xml) {
 
     let alldata = makeList(allGroups);
     let alldatagroups = grouper(alldata,23);
-    console.log(alldatagroups);
-
     function MakeData(data){
         let dataList = [];
         for (let i = 0; i <data.length; i++) {
-            console.log(data[i]);
                 let immigrants = data[i].slice(1,7).reduce(function(a, b) { return a + b; }, 0);
-                let natives = data[i][8];
+                let natives = data[i][7];
                 let population = data[i].slice(1,8).reduce(function(a, b) { return a + b; }, 0);
                 dataList.push({'Area':data[i][0], 'Immigrants': immigrants, 'Natives': natives, 'Population': population,
                     'items': [{'name': data[i][0], 'value': immigrants},
@@ -130,7 +127,7 @@ d3.xml("BarChart/DataPerArea.xml", "application/xml", function(xml) {
         .text("Total");
 
     let item = viz2.selectAll(".state")
-        .data(ListOfAllValues)
+        .data(data)
         .enter().append("g")
         .attr("class", "state")
         .attr("transform", function(d) { return "translate(" + x0(d.Area) + ",0)"; });

@@ -37,14 +37,14 @@ d3.xml("BarChart/DataPerArea.xml", "application/xml", function(xml) {
 
         function split(array, cols) {
             if (cols==1) return array;
-            var size = Math.ceil(array.length / cols);
+            let size = Math.ceil(array.length / cols);
             return array.slice(0, size).concat([null]).concat(split(array.slice(size), cols-1));
         }
 
-        var a = split(array, cols);
-        var groups = [];
-        var group = [];
-        for(var i = 0; i < a.length; i++) {
+        let a = split(array, cols);
+        let groups = [];
+        let group = [];
+        for(let i = 0; i < a.length; i++) {
             if (a[i] === null) {
                 groups.push(group);
                 group = [];

@@ -13,128 +13,172 @@ let img = d3.select("#heatmap").append("svg")
     .attr("transform", "translate(" + margin2.left + "," + margin2.top + ")");
 
 d3.xml("Heatmap/HeatMap.xml", "application/xml", function(xml) {
-    let nodes = d3.select(xml).selectAll("*")[0],
-        links = nodes.slice(1).map(function (d) {
-            return {source: d, value: d.innerHTML};
-        });
-
-    let valuesBinding = links.map(function (item) {
-        let newData = item.source;
-        let xmlNode = newData.getElementsByTagName('binding');
-        if (xmlNode.length > 1) {
-            let x = xmlNode[1];
-            let valueName = x.getAttribute('name');
-            if (valueName === 'low') {
-                return 1;
-            }
-            else if(valueName === 'average'){
-                return 2;
-            }
-            else{
-                return 3;
-            }
-        }
+    let ListOfAllValues = [].map.call(xml.querySelectorAll("binding"), function(result) {
+        let bindingName = result.getAttribute('name');
+        let value =result.childNodes[1].innerHTML;
+        return [bindingName,value]
     });
+    function grouper(array, cols) {
 
-    let DomainsAreasValues = links.map(function (item) {
-        let newData = item.source;
-        let xmlNode = newData.getElementsByTagName('binding');
-        if (xmlNode.length > 1) {
-            let x = xmlNode[0];
-            let y = x.getElementsByTagName('literal');
-            let area = y[0].childNodes[0].nodeValue;
-            let domain = x.getAttribute('name');
-            return [domain, area]
+        function split(array, cols) {
+            if (cols==1) return array;
+            let size = Math.ceil(array.length / cols);
+            return array.slice(0, size).concat([null]).concat(split(array.slice(size), cols-1));
         }
-    });
 
-    let FilterArray = function (data) {
-        return data.filter(Boolean);
-    };
-
-    let listofDomainAreas = FilterArray(DomainsAreasValues);
-    let ListOfValues = FilterArray(valuesBinding);
-
-    let makeList = function (data){
-        let domainList = [];
-        let areaList = [];
-        for (let i = 0; i < data.length; i++){
-            domainList.push(data[i][0]);
-            areaList.push(data[i][1]);
-        }
-        return [domainList,areaList]
-    };
-    
-    let Data = [];
-    Data.push(makeList(listofDomainAreas)[0]);
-    Data.push(makeList(listofDomainAreas)[1]);
-    Data.push(ListOfValues);
-
-    function listvalues(data){
-        let areaNames  = [];
-        for (let i = 0; i < data.length; i++){
-            if (areaNames.indexOf(data[i]) === -1 ){
-                areaNames.push(data[i])
+        let a = split(array, cols);
+        let groups = [];
+        let group = [];
+        for(let i = 0; i < a.length; i++) {
+            if (a[i] === null) {
+                groups.push(group);
+                group = [];
+                continue;
             }
+            group.push(a[i]);
 
         }
-        return areaNames
+        groups.push(group);
+        return groups;
+
     }
-
-    let allAreas = listvalues(Data[1]);
-    let allDomains = listvalues(Data[0]);
-    let allDomainsNumbers = allAreas.map(function(item) {
-        return [item, allAreas.indexOf(item)]
-    });
-
-    let changeStringToNumber = function(data,string) {
-        let numberList = [];
-        let number = 0;
-        for (let i = 0; i < data.length; i++) {
-            if (data[i] === string) {
-                numberList.push(number);
-            }
-            else{
-                number = number +1;
-                numberList.push(number);
-                string = data[i]
+    function makeOneList(data){
+        let dataList = [];
+        for (i=0; i<data.length; i++){
+            let item = data[i];
+            for(let k = 0; k < item.length;k++){
+                dataList.push(item[k]);
             }
         }
-        return numberList
-    };
+        return dataList
+    }
+    let oneList = makeOneList(ListOfAllValues);
+    let ListOfLists = grouper(oneList,145);
 
-    let changeAreasToNumber = function(checkList, data) {
-        let List = [];
-        for (let i = 0; i < data.length; i++){
-            for (let k = 0; k < checkList.length; k++){
-                if (data[i] === checkList[k][0]){
-                    List.push(checkList[k][1])
+    function giveValueforCategory(data){
+        for (i=0;i <data.length; i++){
+            let array = data[i]
+            for (let k = 0; k < array.length; k++){
+                if (array[k] === 'high'){
+                    array[k] = 3
+                }
+                if (array[k]=== 'average'){
+                    array[k] = 2
+                }
+                if (array[k] === 'low') {
+                    array[k] = 1
                 }
             }
         }
-        return List
-    };
+        return data;
+    }
+    let CategorizedData = giveValueforCategory(ListOfLists);
 
-    let AreaListNumbers = changeAreasToNumber(allDomainsNumbers, Data[1]);
+    function toNumbers(data,string) {
+        let number = 0;
+        for (let i = 0; i < data.length; i++) {
+            if (data[i] === string) {
+                data[i] = number;
+            }
+            else{
+                number = number +1;
+                string = data[i];
+                data[i] = number;
+            }
+        }
+        return data
+    }
 
-    let data2 = [];
-    data2.push(changeStringToNumber(Data[0], "Concentration_immigrants"));
-    data2.push(AreaListNumbers);
-    data2.push(Data[2]);
+    function allAreasList(data){
+        let dataList = [];
+        for (i=0; i < data.length; i++){
+            dataList.push(data[i][1])
+        }
+        return dataList
+    }
 
+    function allDomainsList(data){
+        let dataList = [];
+        for (i=0; i < data.length; i++){
+            dataList.push(data[i][0])
+        }
+        return dataList
+    }
+    let allDomainsNamesList = allDomainsList(CategorizedData);
+    let allAreasNamesList = allAreasList(CategorizedData)
+    function AreaToNumbers(data, checkList) {
+        let dataList = []
+        for (let i = 0; i < data.length; i++) {
+            let areas = data[i][1];
+            for (let k = 0; k < checkList.length; k++){
+                if (areas === checkList[k][0]){
+                    dataList.push(checkList[k][1])
+                }
+            }
+        }
+        return dataList
+    }
+    let allDistinctAreas = allAreas(CategorizedData);
+    function allValuesList(data){
+        let dataList = [];
+        for (i=0; i < data.length; i++){
+            dataList.push(data[i][2])
+        }
+        return dataList
+
+    }
+    let valueNumbers = allValuesList(CategorizedData);
+    let areaNumbers = AreaToNumbers(CategorizedData, allDistinctAreas[1]);
+    let domainNumbers = toNumbers(allDomainsNamesList, "Concentration_immigrants");
+
+    let dataList = []
+    dataList.push(domainNumbers);
+    dataList.push(areaNumbers);
+    dataList.push(valueNumbers)
+    function arrayContains(needle, arrhaystack)
+    {
+        return (arrhaystack.indexOf(needle) > -1);
+    }
+
+    function allDomains(data){
+        let dataList = [];
+        for (i=0; i < data.length; i++){
+            let domain = data[i][0]
+            let outcome = arrayContains(domain, dataList);
+            if (outcome === false){
+                dataList.push(domain)
+            }
+        }
+        return dataList;
+    }
+    function allAreas(data){
+        let dataList = [];
+        let number = 0
+        let numberedList = [];
+        for (i=0; i < data.length; i++){
+            let areas = data[i][1]
+            let outcome = arrayContains(areas, dataList);
+            if (outcome === false){
+                dataList.push(areas)
+                numberedList.push([areas,number])
+                number = number + 1
+            }
+        }
+        return [dataList, numberedList];
+    }
+    let allDistinctDomains = allDomains(CategorizedData);
     let finalData = function(data) {
         let finalList = [];
         for (let i = 0; i < data[0].length; i++){
             finalList.push({'domain': data[0][i], 'area': data[1][i] , 'value': data[2][i]})
-
         }
         return finalList
     };
 
-    let data3 = finalData(data2);
-    
+    let data = finalData(dataList);
+
     let dayLabels = img.selectAll(".dayLabel")
-        .data(allDomains)
+        .data(allDistinctDomains)
         .enter().append("text")
         .text(function (d) { return d; })
         .attr("x", -50)
@@ -143,7 +187,7 @@ d3.xml("Heatmap/HeatMap.xml", "application/xml", function(xml) {
         .attr("font-size","14px");
 
     let timeLabels = img.selectAll(".timeLabel")
-        .data(allAreas)
+        .data(allDistinctAreas[0])
         .enter().append("text")
         .text(function(d) {return d; })
         .attr("x", 50)
@@ -158,48 +202,47 @@ d3.xml("Heatmap/HeatMap.xml", "application/xml", function(xml) {
         .range(colors3);
 
     let cards = img.selectAll(".area")
-        .data(data3, function(d) {return d.domain+':'+d.area;});
+        .data(data, function(d) {return d.domain+':'+d.area;});
 
             cards.append("title");
-            
+
             cards.enter().append("rect")
-                .attr("x", function(d) { return (d.area - 1) * gridSize; })
-                .attr("y", function(d) { return (d.domain - 1) * gridSize; })
+                .attr("x", function(d) { return (d.area-1) * gridSize; })
+                .attr("y", function(d) { return (d.domain-1) * gridSize; })
                 .attr("rx", 4)
                 .attr("ry", 4)
                 .attr("class", "hour bordered")
                 .attr("width", gridSize)
                 .attr("height", gridSize)
                 .style("fill",  function(d, i) { return colors3[i]; });
-            
+
             cards.transition().duration(1000)
                 .style("fill", function(d) { return colorScale(d.value); });
-            
+
             cards.select("title").text(function(d) { return d.value; });
-            
+
             cards.exit().remove();
-            
+
             let legend = img.selectAll(".legend")
                 .data(labels);
 
             legend.enter().append("g")
                 .attr("class", "legend");
-            
+
             legend.append("rect")
                 .attr("x", function(d, i) { return legendElementWidth * i; })
                 .attr("y", height2 * 0.70)
                 .attr("width", legendElementWidth)
                 .attr("height", gridSize / 2)
                 .style("fill", function(d, i) { return colors3[i]; });
-            
+
             legend.append("text")
                 .data(labels)
                 .attr("class", "mono")
                 .text(function(d) { return d })
                 .attr("x", function(d, i) { return legendElementWidth * i +25; })
                 .attr("y", height2 * 0.80);
-            
+
             legend.exit().remove();
 
         });
-

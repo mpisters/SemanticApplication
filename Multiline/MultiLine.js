@@ -34,41 +34,49 @@ let viz = d3.select("#multiline2").append("svg")
 
 d3.xml("Multiline/data_alle_jaren.xml", "application/xml", function(xml) {
 
-    let nodes = d3.select(xml).selectAll("*")[0],
-        links = nodes.slice(1).map(function (d) {
-            return {source: d, value: d.innerHTML};
-        });
-
-    let valueLiteral = links.map(function (item) {
-        let newData = item.source;
-        let xmlNode = newData.getElementsByTagName('literal');
-        if (xmlNode.length> 0 && xmlNode.length < 2) {
-            let x = xmlNode;
-            let y = x[0].childNodes[0].nodeValue;
-            y = Number(y);
-            return y
-        }
+    let ListOfAllValues = [].map.call(xml.querySelectorAll("literal"), function(result) {
+        let value =result.childNodes[0].nodeValue;
+        return value
     });
+    function grouper(array, cols) {
 
-    let ListLiterals = function (data) {
-        let newList = [];
-        for (let i = 0; i < data.length; i++) {
-            if (typeof data[i] === 'number') {
-                newList.push(data[i])
+        function split(array, cols) {
+            if (cols==1) return array;
+            let size = Math.ceil(array.length / cols);
+            return array.slice(0, size).concat([null]).concat(split(array.slice(size), cols-1));
+        }
+
+        let a = split(array, cols);
+        let groups = [];
+        let group = [];
+        for(let i = 0; i < a.length; i++) {
+            if (a[i] === null) {
+                groups.push(group);
+                group = [];
+                continue;
+            }
+            group.push(a[i]);
+
+        }
+        groups.push(group);
+        return groups;
+
+    }
+    let groupOfValues = grouper(ListOfAllValues,12);
+    function makeList(data) {
+        let dataList = [];
+        for (let i = 0; i < data.length; i++){
+            let numbers = data[i].slice(1,8);
+            dataList.push(data[i][0]);
+            for (let k = 0; k < numbers.length; k++){
+                dataList.push(Number(numbers[k]))
             }
         }
-        return newList
-    };
+        return dataList;
+    }
+    let dataList = makeList(groupOfValues);
+    let dataList2 = grouper(dataList,12);
 
-    let ListOfValues = ListLiterals(valueLiteral);
-    let groupSize = 8;
-    let groups = ListOfValues.map(function(item, index){
-
-            return index % groupSize === 0 ? ListOfValues.slice(index, index + groupSize) : null;
-        })
-        .filter(function(item){ return item;
-
-        });
 
     let ListData = function(data) {
         let total = data.length;
@@ -88,8 +96,8 @@ d3.xml("Multiline/data_alle_jaren.xml", "application/xml", function(xml) {
     };
 
     let makeData = function(data) {
-        let immigrants = data[0];
         let natives = data[1];
+        let immigrants = data[0];
         let years = data[2];
         let dataList = [];
         for (let i = 0; i < immigrants.length; i++) {
@@ -98,8 +106,7 @@ d3.xml("Multiline/data_alle_jaren.xml", "application/xml", function(xml) {
         return dataList;
     };
 
-    let listOfData = ListData(groups);
-
+    let listOfData = ListData(dataList2);
     let data = makeData(listOfData);
 
 mult_color.domain(d3.keys(data[0]).filter(function(key) { return key !== "year"; }));

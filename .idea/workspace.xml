@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="81440435-508e-43e9-8dd5-f759a7659945" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BarChart/BarChart.js" afterPath="$PROJECT_DIR$/BarChart/BarChart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Heatmap/HeatMap.xml" afterPath="$PROJECT_DIR$/Heatmap/HeatMap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Heatmap/Heatmap.js" afterPath="$PROJECT_DIR$/Heatmap/Heatmap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Multiline/MultiLine.js" afterPath="$PROJECT_DIR$/Multiline/MultiLine.js" />
     </list>
     <ignored path="WebApplicatie.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,14 +23,14 @@
     <favorites_list name="WebApplicatie" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5228296">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="Heatmap.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Heatmap/Heatmap.js">
+          <file leaf-file-name="MultiLine.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Multiline/MultiLine.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="165" column="60" selection-start-line="165" selection-start-column="60" selection-end-line="165" selection-end-column="60" />
+                <state relative-caret-position="294">
+                  <caret line="77" column="41" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
@@ -41,52 +39,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="BarChart.js" pinned="false" current-in-tab="false">
+        <leaf>
+          <file leaf-file-name="BarChart.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/BarChart/BarChart.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="145" column="37" selection-start-line="145" selection-start-column="37" selection-end-line="145" selection-end-column="37" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MultiLine.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Multiline/MultiLine.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="277">
-                  <caret line="234" column="31" selection-start-line="234" selection-start-column="28" selection-end-line="234" selection-end-column="31" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PieChart.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/PieChart/PieChart.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="277">
-                  <caret line="100" column="12" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="12" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="HeatMap.xml" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Heatmap/HeatMap.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="775" column="30" selection-start-line="775" selection-start-column="30" selection-end-line="775" selection-end-column="30" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DataPerArea.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/BarChart/DataPerArea.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="616">
+                  <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
@@ -126,11 +84,11 @@
         <option value="$PROJECT_DIR$/BarChart/data.csv" />
         <option value="$PROJECT_DIR$/BarChart/BarChart.css" />
         <option value="$PROJECT_DIR$/main.html" />
-        <option value="$PROJECT_DIR$/Multiline/MultiLine.js" />
         <option value="$PROJECT_DIR$/PieChart/PieChart.js" />
-        <option value="$PROJECT_DIR$/BarChart/BarChart.js" />
         <option value="$PROJECT_DIR$/Heatmap/HeatMap.xml" />
         <option value="$PROJECT_DIR$/Heatmap/Heatmap.js" />
+        <option value="$PROJECT_DIR$/BarChart/BarChart.js" />
+        <option value="$PROJECT_DIR$/Multiline/MultiLine.js" />
       </list>
     </option>
   </component>
@@ -381,7 +339,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84248000" />
+    <option name="totallyTimeSpent" value="94187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -418,7 +376,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -444,14 +402,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html" />
     <entry file="file://$PROJECT_DIR$/bootstrap/css/heroic-features.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
@@ -487,14 +438,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1628">
-          <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html" />
     <entry file="file://$PROJECT_DIR$/bootstrap/css/heroic-features.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -530,14 +474,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1628">
-          <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html" />
     <entry file="file://$PROJECT_DIR$/bootstrap/css/heroic-features.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -573,14 +510,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html" />
     <entry file="file://$PROJECT_DIR$/PieChart/PieChart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2464">
@@ -609,14 +539,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html" />
     <entry file="file://$PROJECT_DIR$/PieChart/PieChart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -706,34 +629,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2596">
-          <caret line="118" column="7" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html" />
     <entry file="file://$PROJECT_DIR$/BarChart/DataPerArea.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BarChart/BarChart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="145" column="37" selection-start-line="145" selection-start-column="37" selection-end-line="145" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Multiline/MultiLine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="234" column="31" selection-start-line="234" selection-start-column="28" selection-end-line="234" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -756,8 +656,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Heatmap/Heatmap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="165" column="60" selection-start-line="165" selection-start-column="60" selection-end-line="165" selection-end-column="60" />
+        <state relative-caret-position="371">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BarChart/BarChart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Multiline/MultiLine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="77" column="41" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
           <folding />
         </state>
       </provider>

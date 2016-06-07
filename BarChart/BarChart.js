@@ -29,67 +29,65 @@ let viz2 = d3.select("#BarChart").append("svg")
 
 
 d3.xml("BarChart/DataPerArea.xml", "application/xml", function(xml) {
-
-    let nodes = d3.select(xml).selectAll("*")[0],
-        links = nodes.slice(1).map(function (d) {
-            return {source: d, value: d.innerHTML};
-        });
-
-    let valueLiteral = links.map(function (item) {
-        let newData = item.source;
-        let xmlNode = newData.getElementsByTagName('literal');
-        if (xmlNode.length> 0 && xmlNode.length < 2) {
-
-            let y = xmlNode[0].childNodes[0].nodeValue;
-            y = Number(y);
-            return y
-        }
+    let ListOfAllValues = [].map.call(xml.querySelectorAll("literal"), function(result) {
+        let value =result.childNodes[0].nodeValue;
+        return value
     });
+    function grouper(array, cols) {
 
-    let AreaNames = links.map(function (item) {
-        let newData = item.source;
-        let xmlNode = newData.getElementsByTagName('binding');
-        if (xmlNode.length > 1) {
-            let x = xmlNode[0];
-            let y = x.getElementsByTagName('literal');
-            return y[0].childNodes[0].nodeValue;
+        function split(array, cols) {
+            if (cols==1) return array;
+            var size = Math.ceil(array.length / cols);
+            return array.slice(0, size).concat([null]).concat(split(array.slice(size), cols-1));
         }
-    });
 
-    let FilterArray = function (data) {
-        return data.filter(Boolean);
-    };
-    let ListOfAreaNames = FilterArray(AreaNames);
-    let ListOfValues = FilterArray(valueLiteral);
-    let groupSize = 7;
-    let groups = ListOfValues.map(function(item, index){
+        var a = split(array, cols);
+        var groups = [];
+        var group = [];
+        for(var i = 0; i < a.length; i++) {
+            if (a[i] === null) {
+                groups.push(group);
+                group = [];
+                continue;
+            }
+            group.push(a[i]);
 
-            return index % groupSize === 0 ? ListOfValues.slice(index, index + groupSize) : null;
-        })
-        .filter(function(item){ return item;
-
-        });
-    function makeList(data,list) {
-        for (let i = 0; i < data.length; i++){
-            data[i].unshift(list[i])
         }
-        return data;
+        groups.push(group);
+        return groups;
+
     }
-    let dataList = makeList(groups,ListOfAreaNames);
+    let allGroups = grouper(ListOfAllValues,23);
+    function makeList(data) {
+        let dataList = [];
+        for (let i = 0; i < data.length; i++){
+            let numbers = data[i].slice(1,8);
+            dataList.push(data[i][0]);
+            for (let k = 0; k < numbers.length; k++){
+                dataList.push(Number(numbers[k]))
+            }
+        }
+        return dataList;
+    }
+
+    let alldata = makeList(allGroups);
+    let alldatagroups = grouper(alldata,23);
+    console.log(alldatagroups);
 
     function MakeData(data){
         let dataList = [];
-        for (let i = 0; i <data.length; i++){
-            let immigrants = data[i].slice(1,7).reduce(function(a, b) { return a + b; }, 0);
-            let natives = data[i][7];
-            let population = data[i].slice(1,8).reduce(function(a, b) { return a + b; }, 0);
-            dataList.push({'Area':data[i][0], 'Immigrants': immigrants, 'Natives': natives, 'Population': population,
-                'items': [{'name': data[i][0], 'value': immigrants},
-                    {'name': data[i][0], 'value': natives},{'name': data[i][0], 'value': population}]});
+        for (let i = 0; i <data.length; i++) {
+            console.log(data[i]);
+                let immigrants = data[i].slice(1,7).reduce(function(a, b) { return a + b; }, 0);
+                let natives = data[i][8];
+                let population = data[i].slice(1,8).reduce(function(a, b) { return a + b; }, 0);
+                dataList.push({'Area':data[i][0], 'Immigrants': immigrants, 'Natives': natives, 'Population': population,
+                    'items': [{'name': data[i][0], 'value': immigrants},
+                        {'name': data[i][0], 'value': natives},{'name': data[i][0], 'value': population}]});
         }
         return dataList
     }
-    let data = MakeData(dataList);
+    let data = MakeData(alldatagroups);
     let itemNames = d3.keys(data[0]).filter(function(key) {
         if (key !== 'Area' && key !== 'items'){
             return key;
@@ -132,7 +130,7 @@ d3.xml("BarChart/DataPerArea.xml", "application/xml", function(xml) {
         .text("Total");
 
     let item = viz2.selectAll(".state")
-        .data(data)
+        .data(ListOfAllValues)
         .enter().append("g")
         .attr("class", "state")
         .attr("transform", function(d) { return "translate(" + x0(d.Area) + ",0)"; });

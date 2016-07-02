@@ -60,7 +60,7 @@ d3.xml("Heatmap/HeatMap.xml", "application/xml", function(xml) {
 
     function giveValueforCategory(data){
         for (i=0;i <data.length; i++){
-            let array = data[i]
+            let array = data[i];
             for (let k = 0; k < array.length; k++){
                 if (array[k] === 'high'){
                     array[k] = 3
@@ -111,7 +111,7 @@ d3.xml("Heatmap/HeatMap.xml", "application/xml", function(xml) {
     let allAreasNamesList = allAreasList(CategorizedData);
 
     function AreaToNumbers(data, checkList) {
-        let dataList = []
+        let dataList = [];
         for (let i = 0; i < data.length; i++) {
             let areas = data[i][1];
             for (let k = 0; k < checkList.length; k++){
@@ -135,10 +135,10 @@ d3.xml("Heatmap/HeatMap.xml", "application/xml", function(xml) {
     let areaNumbers = AreaToNumbers(CategorizedData, allDistinctAreas[1]);
     let domainNumbers = toNumbers(allDomainsNamesList, "Concentration_immigrants");
 
-    let dataList = []
+    let dataList = [];
     dataList.push(domainNumbers);
     dataList.push(areaNumbers);
-    dataList.push(valueNumbers)
+    dataList.push(valueNumbers);
     function arrayContains(needle, arrhaystack)
     {
         return (arrhaystack.indexOf(needle) > -1);
@@ -147,7 +147,7 @@ d3.xml("Heatmap/HeatMap.xml", "application/xml", function(xml) {
     function allDomains(data){
         let dataList = [];
         for (i=0; i < data.length; i++){
-            let domain = data[i][0]
+            let domain = data[i][0];
             let outcome = arrayContains(domain, dataList);
             if (outcome === false){
                 dataList.push(domain)
@@ -157,14 +157,14 @@ d3.xml("Heatmap/HeatMap.xml", "application/xml", function(xml) {
     }
     function allAreas(data){
         let dataList = [];
-        let number = 0
+        let number = 0;
         let numberedList = [];
         for (i=0; i < data.length; i++){
-            let areas = data[i][1]
+            let areas = data[i][1];
             let outcome = arrayContains(areas, dataList);
             if (outcome === false){
-                dataList.push(areas)
-                numberedList.push([areas,number])
+                dataList.push(areas);
+                numberedList.push([areas,number]);
                 number = number + 1
             }
         }

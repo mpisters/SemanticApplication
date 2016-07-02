@@ -35,8 +35,7 @@ let viz = d3.select("#multiline2").append("svg")
 d3.xml("Multiline/data_alle_jaren.xml", "application/xml", function(xml) {
 
     let ListOfAllValues = [].map.call(xml.querySelectorAll("literal"), function(result) {
-        let value =result.childNodes[0].nodeValue;
-        return value
+        return result.childNodes[0].nodeValue;
     });
     function grouper(array, cols) {
 
@@ -121,10 +120,6 @@ mult_color.domain(d3.keys(data[0]).filter(function(key) { return key !== "year";
     });
 
     x.domain([2005,2016]);
-    // y.domain([
-    //     d3.min(population, function(c) { return d3.min(c.values, function(v) { return v.total; }); }),
-    //     d3.max(population, function(c) { return d3.max(c.values, function(v) { return v.total; }); })
-    // ]);
     y4.domain([300000,500000]);
 
 
@@ -237,11 +232,6 @@ mult_color.domain(d3.keys(data[0]).filter(function(key) { return key !== "year";
                     let xYear = x.invert(mouse[0]),
                         bisect = d3.bisector(function(d) {return d.year; }).right;
                     idx = bisect(d.values, xYear);
-
-                    // since we are use curve fitting we can't relay on finding the points like I had done in my last answer
-                    // this conducts a search using some SVG path functions
-                    // to find the correct position on the line
-                    // from http://bl.ocks.org/duopixel/3824661
                     let beginning = 0,
                         end = lines[i].getTotalLength();
 

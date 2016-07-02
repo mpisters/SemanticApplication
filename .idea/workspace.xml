@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81440435-508e-43e9-8dd5-f759a7659945" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Heatmap/HeatMap.xml" afterPath="$PROJECT_DIR$/Heatmap/HeatMap.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BarChart/BarChart.js" afterPath="$PROJECT_DIR$/BarChart/BarChart.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Heatmap/Heatmap.js" afterPath="$PROJECT_DIR$/Heatmap/Heatmap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Multiline/MultiLine.js" afterPath="$PROJECT_DIR$/Multiline/MultiLine.js" />
     </list>
     <ignored path="WebApplicatie.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,18 +38,28 @@
       <file leaf-file-name="BarChart.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BarChart/BarChart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="20" />
+            <state relative-caret-position="-954">
+              <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Heatmap.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MultiLine.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Multiline/MultiLine.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="797">
+              <caret line="259" column="3" selection-start-line="259" selection-start-column="3" selection-end-line="259" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Heatmap.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Heatmap/Heatmap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="140" column="31" selection-start-line="140" selection-start-column="31" selection-end-line="140" selection-end-column="31" />
+            <state relative-caret-position="1144">
+              <caret line="166" column="50" selection-start-line="166" selection-start-column="50" selection-end-line="166" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -117,12 +127,12 @@
         <option value="$PROJECT_DIR$/BarChart/data.csv" />
         <option value="$PROJECT_DIR$/BarChart/BarChart.css" />
         <option value="$PROJECT_DIR$/main.html" />
-        <option value="$PROJECT_DIR$/BarChart/BarChart.js" />
-        <option value="$PROJECT_DIR$/Multiline/MultiLine.js" />
         <option value="$PROJECT_DIR$/PieChart/PieChart.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Heatmap/HeatMap.xml" />
         <option value="$PROJECT_DIR$/Heatmap/Heatmap.js" />
+        <option value="$PROJECT_DIR$/BarChart/BarChart.js" />
+        <option value="$PROJECT_DIR$/Multiline/MultiLine.js" />
       </list>
     </option>
   </component>
@@ -410,12 +420,12 @@
       <workItem from="1466350659617" duration="1444000" />
       <workItem from="1466489240144" duration="22000" />
       <workItem from="1467288422989" duration="3049000" />
-      <workItem from="1467468834330" duration="4218000" />
+      <workItem from="1467468834330" duration="4660000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105954000" />
+    <option name="totallyTimeSpent" value="106396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -452,7 +462,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -699,13 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Multiline/MultiLine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -718,14 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BarChart/BarChart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -748,8 +743,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Heatmap/Heatmap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="140" column="31" selection-start-line="140" selection-start-column="31" selection-end-line="140" selection-end-column="31" />
+        <state relative-caret-position="1144">
+          <caret line="166" column="50" selection-start-line="166" selection-start-column="50" selection-end-line="166" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BarChart/BarChart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-954">
+          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Multiline/MultiLine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="797">
+          <caret line="259" column="3" selection-start-line="259" selection-start-column="3" selection-end-line="259" selection-end-column="3" />
           <folding />
         </state>
       </provider>

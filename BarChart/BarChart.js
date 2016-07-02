@@ -30,8 +30,7 @@ let viz2 = d3.select("#BarChart").append("svg")
 
 d3.xml("BarChart/DataPerArea.xml", "application/xml", function(xml) {
     let ListOfAllValues = [].map.call(xml.querySelectorAll("literal"), function(result) {
-        let value =result.childNodes[0].nodeValue;
-        return value
+        return result.childNodes[0].nodeValue;
     });
     function grouper(array, cols) {
 

@@ -554,262 +554,6 @@
       </binding>
     </result>
     <result>
-      <binding name="Education">
-        <literal>Centrum-West</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">80.5</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Centrum-Oost</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">82</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Westerpark</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">54.5</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Bos en Lommer</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">40.5</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Oud-West/De Baarsjes</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">52.8</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Geuzenveld-Slotermeer-Sloterdijken</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">35.4</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Osdorp</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">37.8</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>De Aker. Sloten en Nieuw Sloten</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">49.6</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Slotervaart</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">38.2</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Oud-Zuid</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">82.4</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Buitenveldert/Zuidas</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">71.2</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>De Pijp/Rivierenbuurt</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">60.7</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Oud-Oost</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">54.7</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Indische Buurt/Oostelijk Havengebied</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">59</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Watergraafsmeer</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">76.3</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>IJburg/Zeeburgereiland</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">60.3</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Noord-West</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">45.5</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Oud-Noord</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">46.5</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Noord-Oost</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">41.8</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Gaasperdam/Driemond</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">31.7</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>buiten beschouwing</literal>
-      </binding>
-      <binding name="high">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">52.7</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Bos en Lommer</literal>
-      </binding>
-      <binding name="average">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">38.5</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Geuzenveld-Slotermeer-Sloterdijken</literal>
-      </binding>
-      <binding name="average">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">40.5</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Osdorp</literal>
-      </binding>
-      <binding name="average">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">39.8</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>De Aker. Sloten en Nieuw Sloten</literal>
-      </binding>
-      <binding name="average">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">37.5</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Slotervaart</literal>
-      </binding>
-      <binding name="average">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">42.8</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Noord-West</literal>
-      </binding>
-      <binding name="average">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">34</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Oud-Noord</literal>
-      </binding>
-      <binding name="average">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">32.4</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Noord-Oost</literal>
-      </binding>
-      <binding name="average">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">32.1</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Bijlmer-Centrum</literal>
-      </binding>
-      <binding name="average">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">42.9</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Bijlmer-Oost</literal>
-      </binding>
-      <binding name="average">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">42.4</literal>
-      </binding>
-    </result>
-    <result>
-      <binding name="Education">
-        <literal>Gaasperdam/Driemond</literal>
-      </binding>
-      <binding name="average">
-        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">46.4</literal>
-      </binding>
-    </result>
-    <result>
       <binding name="Perception_of_insecurity">
         <literal>Geuzenveld-Slotermeer-Sloterdijken</literal>
       </binding>
@@ -1159,6 +903,558 @@
       </binding>
       <binding name="low">
         <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">89</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>Centrum-West</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">5.2</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>Centrum-Oost</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>Westerpark</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">13.7</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>Bos en Lommer</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">20.4</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>Oud-West/De Baarsjes</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">15.4</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>Geuzenveld-Slotermeer-Sloterdijken</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">21.2</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>Osdorp</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">20.1</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>De Aker. Sloten en Nieuw Sloten</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">12</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>Slotervaart</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">16.5</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>Oud-Zuid</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">5.3</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>Buitenveldert/Zuidas</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">5.6</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>De Pijp/Rivierenbuurt</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">12.3</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>Oud-Oost</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">14.2</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>Indische Buurt/Oostelijk Havengebied</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">11.6</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>Watergraafsmeer</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">7.6</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>IJburg/Zeeburgereiland</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">9.1</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>Noord-West</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">18.8</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>Oud-Noord</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">19.5</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>Gaasperdam/Driemond</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">20.4</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>buiten beschouwing</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">14.9</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>Noord-Oost</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">24.7</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>Bijlmer-Centrum</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">26.8</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="low_educated">
+        <literal>Bijlmer-Oost</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">25.4</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>Centrum-West</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">14.3</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>Centrum-Oost</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">12.8</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>Oud-Zuid</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">12</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>Buitenveldert/Zuidas</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">21.6</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>Watergraafsmeer</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">15.6</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>Westerpark</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">30</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>Bos en Lommer</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">38.5</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>Oud-West/De Baarsjes</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">30.6</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>Geuzenveld-Slotermeer-Sloterdijken</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">40.5</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>Osdorp</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">39.8</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>De Aker. Sloten en Nieuw Sloten</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">37.5</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>Slotervaart</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">42.8</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>De Pijp/Rivierenbuurt</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">26.4</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>Oud-Oost</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">30.2</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>Indische Buurt/Oostelijk Havengebied</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">27.3</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>IJburg/Zeeburgereiland</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">29.5</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>Noord-West</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">34</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>Oud-Noord</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">32.4</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>Noord-Oost</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">32.1</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>Bijlmer-Centrum</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">42.9</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>Bijlmer-Oost</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">42.4</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>Gaasperdam/Driemond</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">46.4</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="normally_educated">
+        <literal>buiten beschouwing</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">28.4</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>Geuzenveld-Slotermeer-Sloterdijken</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">35.4</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>Bijlmer-Centrum</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">29.3</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>Bijlmer-Oost</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">30.7</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>Gaasperdam/Driemond</literal>
+      </binding>
+      <binding name="low">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">31.7</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>Westerpark</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">54.5</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>Bos en Lommer</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">40.5</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>Oud-West/De Baarsjes</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">52.8</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>Osdorp</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">37.8</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>De Aker. Sloten en Nieuw Sloten</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">49.6</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>Slotervaart</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">38.2</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>De Pijp/Rivierenbuurt</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">60.7</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>Oud-Oost</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">54.7</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>Indische Buurt/Oostelijk Havengebied</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">59</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>IJburg/Zeeburgereiland</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">60.3</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>Noord-West</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">45.5</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>Oud-Noord</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">46.5</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>Noord-Oost</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">41.8</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>buiten beschouwing</literal>
+      </binding>
+      <binding name="average">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">52.7</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>Centrum-West</literal>
+      </binding>
+      <binding name="high">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">80.5</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>Centrum-Oost</literal>
+      </binding>
+      <binding name="high">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">82</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>Oud-Zuid</literal>
+      </binding>
+      <binding name="high">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">82.4</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>Buitenveldert/Zuidas</literal>
+      </binding>
+      <binding name="high">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">71.2</literal>
+      </binding>
+    </result>
+    <result>
+      <binding name="highly_educated">
+        <literal>Watergraafsmeer</literal>
+      </binding>
+      <binding name="high">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#decimal">76.3</literal>
       </binding>
     </result>
   </results>

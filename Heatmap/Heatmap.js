@@ -1,9 +1,9 @@
 let margin2 = { top: 300, right: 0, bottom: 0, left: 220 },
     width2 = 1000 - margin2.left - margin2.right,
-    height2 = 600 - margin2.top - margin2.bottom,
+    height2 = 700 - margin2.top - margin2.bottom,
     gridSize = Math.floor(width2 / 22),
     legendElementWidth = 100,
-    colors3 = ['#e66101','#fdb863','#b2abd2','#5e3c99'],
+    colors3 = ['#ffffb2','#fecc5c','#fd8d3c','#e31a1c'],
     labels = ['unknown','low','average','high'];
 
 let img = d3.select("#heatmap").append("svg")
@@ -18,6 +18,7 @@ d3.xml("Heatmap/HeatMap.xml", "application/xml", function(xml) {
         let value =result.childNodes[1].innerHTML;
         return [bindingName,value]
     });
+
     function grouper(array, cols) {
 
         function split(array, cols) {
@@ -53,7 +54,9 @@ d3.xml("Heatmap/HeatMap.xml", "application/xml", function(xml) {
         return dataList
     }
     let oneList = makeOneList(ListOfAllValues);
-    let ListOfLists = grouper(oneList,145);
+    let totalColumns = oneList.length / 4;
+    let ListOfLists = grouper(oneList, totalColumns);
+
 
     function giveValueforCategory(data){
         for (i=0;i <data.length; i++){
@@ -73,7 +76,7 @@ d3.xml("Heatmap/HeatMap.xml", "application/xml", function(xml) {
         return data;
     }
     let CategorizedData = giveValueforCategory(ListOfLists);
-
+  
     function toNumbers(data,string) {
         let number = 0;
         for (let i = 0; i < data.length; i++) {
@@ -105,7 +108,8 @@ d3.xml("Heatmap/HeatMap.xml", "application/xml", function(xml) {
         return dataList
     }
     let allDomainsNamesList = allDomainsList(CategorizedData);
-    let allAreasNamesList = allAreasList(CategorizedData)
+    let allAreasNamesList = allAreasList(CategorizedData);
+
     function AreaToNumbers(data, checkList) {
         let dataList = []
         for (let i = 0; i < data.length; i++) {
@@ -241,7 +245,7 @@ d3.xml("Heatmap/HeatMap.xml", "application/xml", function(xml) {
                 .attr("class", "mono")
                 .text(function(d) { return d })
                 .attr("x", function(d, i) { return legendElementWidth * i +25; })
-                .attr("y", height2 * 0.80);
+                .attr("y", height2 * 0.8);
 
             legend.exit().remove();
 

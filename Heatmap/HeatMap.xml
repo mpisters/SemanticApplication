@@ -906,7 +906,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>Centrum-West</literal>
       </binding>
       <binding name="low">
@@ -914,7 +914,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>Centrum-Oost</literal>
       </binding>
       <binding name="low">
@@ -922,7 +922,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>Westerpark</literal>
       </binding>
       <binding name="low">
@@ -930,7 +930,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>Bos en Lommer</literal>
       </binding>
       <binding name="low">
@@ -938,7 +938,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>Oud-West/De Baarsjes</literal>
       </binding>
       <binding name="low">
@@ -946,7 +946,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>Geuzenveld-Slotermeer-Sloterdijken</literal>
       </binding>
       <binding name="low">
@@ -954,7 +954,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>Osdorp</literal>
       </binding>
       <binding name="low">
@@ -962,7 +962,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>De Aker. Sloten en Nieuw Sloten</literal>
       </binding>
       <binding name="low">
@@ -970,7 +970,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>Slotervaart</literal>
       </binding>
       <binding name="low">
@@ -978,7 +978,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>Oud-Zuid</literal>
       </binding>
       <binding name="low">
@@ -986,7 +986,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>Buitenveldert/Zuidas</literal>
       </binding>
       <binding name="low">
@@ -994,7 +994,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>De Pijp/Rivierenbuurt</literal>
       </binding>
       <binding name="low">
@@ -1002,7 +1002,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>Oud-Oost</literal>
       </binding>
       <binding name="low">
@@ -1010,7 +1010,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>Indische Buurt/Oostelijk Havengebied</literal>
       </binding>
       <binding name="low">
@@ -1018,7 +1018,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>Watergraafsmeer</literal>
       </binding>
       <binding name="low">
@@ -1026,7 +1026,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>IJburg/Zeeburgereiland</literal>
       </binding>
       <binding name="low">
@@ -1034,7 +1034,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>Noord-West</literal>
       </binding>
       <binding name="low">
@@ -1042,7 +1042,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>Oud-Noord</literal>
       </binding>
       <binding name="low">
@@ -1050,7 +1050,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>Gaasperdam/Driemond</literal>
       </binding>
       <binding name="low">
@@ -1058,7 +1058,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>buiten beschouwing</literal>
       </binding>
       <binding name="low">
@@ -1066,7 +1066,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>Noord-Oost</literal>
       </binding>
       <binding name="average">
@@ -1074,7 +1074,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>Bijlmer-Centrum</literal>
       </binding>
       <binding name="average">
@@ -1082,7 +1082,7 @@
       </binding>
     </result>
     <result>
-      <binding name="low_educated">
+      <binding name="Low_educated">
         <literal>Bijlmer-Oost</literal>
       </binding>
       <binding name="average">
@@ -1090,7 +1090,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>Centrum-West</literal>
       </binding>
       <binding name="low">
@@ -1098,7 +1098,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>Centrum-Oost</literal>
       </binding>
       <binding name="low">
@@ -1106,7 +1106,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>Oud-Zuid</literal>
       </binding>
       <binding name="low">
@@ -1114,7 +1114,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>Buitenveldert/Zuidas</literal>
       </binding>
       <binding name="low">
@@ -1122,7 +1122,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>Watergraafsmeer</literal>
       </binding>
       <binding name="low">
@@ -1130,7 +1130,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>Westerpark</literal>
       </binding>
       <binding name="average">
@@ -1138,7 +1138,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>Bos en Lommer</literal>
       </binding>
       <binding name="average">
@@ -1146,7 +1146,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>Oud-West/De Baarsjes</literal>
       </binding>
       <binding name="average">
@@ -1154,7 +1154,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>Geuzenveld-Slotermeer-Sloterdijken</literal>
       </binding>
       <binding name="average">
@@ -1162,7 +1162,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>Osdorp</literal>
       </binding>
       <binding name="average">
@@ -1170,7 +1170,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>De Aker. Sloten en Nieuw Sloten</literal>
       </binding>
       <binding name="average">
@@ -1178,7 +1178,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>Slotervaart</literal>
       </binding>
       <binding name="average">
@@ -1186,7 +1186,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>De Pijp/Rivierenbuurt</literal>
       </binding>
       <binding name="average">
@@ -1194,7 +1194,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>Oud-Oost</literal>
       </binding>
       <binding name="average">
@@ -1202,7 +1202,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>Indische Buurt/Oostelijk Havengebied</literal>
       </binding>
       <binding name="average">
@@ -1210,7 +1210,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>IJburg/Zeeburgereiland</literal>
       </binding>
       <binding name="average">
@@ -1218,7 +1218,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>Noord-West</literal>
       </binding>
       <binding name="average">
@@ -1226,7 +1226,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>Oud-Noord</literal>
       </binding>
       <binding name="average">
@@ -1234,7 +1234,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>Noord-Oost</literal>
       </binding>
       <binding name="average">
@@ -1242,7 +1242,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>Bijlmer-Centrum</literal>
       </binding>
       <binding name="average">
@@ -1250,7 +1250,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>Bijlmer-Oost</literal>
       </binding>
       <binding name="average">
@@ -1258,7 +1258,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>Gaasperdam/Driemond</literal>
       </binding>
       <binding name="average">
@@ -1266,7 +1266,7 @@
       </binding>
     </result>
     <result>
-      <binding name="normally_educated">
+      <binding name="Normally_educated">
         <literal>buiten beschouwing</literal>
       </binding>
       <binding name="average">
@@ -1274,7 +1274,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>Geuzenveld-Slotermeer-Sloterdijken</literal>
       </binding>
       <binding name="low">
@@ -1282,7 +1282,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>Bijlmer-Centrum</literal>
       </binding>
       <binding name="low">
@@ -1290,7 +1290,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>Bijlmer-Oost</literal>
       </binding>
       <binding name="low">
@@ -1298,7 +1298,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>Gaasperdam/Driemond</literal>
       </binding>
       <binding name="low">
@@ -1306,7 +1306,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>Westerpark</literal>
       </binding>
       <binding name="average">
@@ -1314,7 +1314,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>Bos en Lommer</literal>
       </binding>
       <binding name="average">
@@ -1322,7 +1322,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>Oud-West/De Baarsjes</literal>
       </binding>
       <binding name="average">
@@ -1330,7 +1330,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>Osdorp</literal>
       </binding>
       <binding name="average">
@@ -1338,7 +1338,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>De Aker. Sloten en Nieuw Sloten</literal>
       </binding>
       <binding name="average">
@@ -1346,7 +1346,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>Slotervaart</literal>
       </binding>
       <binding name="average">
@@ -1354,7 +1354,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>De Pijp/Rivierenbuurt</literal>
       </binding>
       <binding name="average">
@@ -1362,7 +1362,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>Oud-Oost</literal>
       </binding>
       <binding name="average">
@@ -1370,7 +1370,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>Indische Buurt/Oostelijk Havengebied</literal>
       </binding>
       <binding name="average">
@@ -1378,7 +1378,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>IJburg/Zeeburgereiland</literal>
       </binding>
       <binding name="average">
@@ -1386,7 +1386,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>Noord-West</literal>
       </binding>
       <binding name="average">
@@ -1394,7 +1394,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>Oud-Noord</literal>
       </binding>
       <binding name="average">
@@ -1402,7 +1402,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>Noord-Oost</literal>
       </binding>
       <binding name="average">
@@ -1410,7 +1410,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>buiten beschouwing</literal>
       </binding>
       <binding name="average">
@@ -1418,7 +1418,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>Centrum-West</literal>
       </binding>
       <binding name="high">
@@ -1426,7 +1426,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>Centrum-Oost</literal>
       </binding>
       <binding name="high">
@@ -1434,7 +1434,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>Oud-Zuid</literal>
       </binding>
       <binding name="high">
@@ -1442,7 +1442,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>Buitenveldert/Zuidas</literal>
       </binding>
       <binding name="high">
@@ -1450,7 +1450,7 @@
       </binding>
     </result>
     <result>
-      <binding name="highly_educated">
+      <binding name="Highly_educated">
         <literal>Watergraafsmeer</literal>
       </binding>
       <binding name="high">

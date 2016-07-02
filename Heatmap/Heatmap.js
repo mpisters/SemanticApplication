@@ -4,7 +4,7 @@ let margin2 = { top: 300, right: 0, bottom: 0, left: 220 },
     gridSize = Math.floor(width2 / 22),
     legendElementWidth = 100,
     colors3 = ['#ffffb2','#fecc5c','#fd8d3c','#e31a1c'],
-    labels = ['unknown','low','average','high'];
+    labels = ['low','average','high'];
 
 let img = d3.select("#heatmap").append("svg")
     .attr("width", width2 + margin2.left + margin2.right)
@@ -238,7 +238,7 @@ d3.xml("Heatmap/HeatMap.xml", "application/xml", function(xml) {
                 .attr("y", height2 * 0.70)
                 .attr("width", legendElementWidth)
                 .attr("height", gridSize / 2)
-                .style("fill", function(d, i) { return colors3[i]; });
+                .style("fill", function(d, i) { return colors3[i+1]; });
 
             legend.append("text")
                 .data(labels)
